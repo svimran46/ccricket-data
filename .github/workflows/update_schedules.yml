@@ -1,0 +1,33 @@
+name: Auto Update Cricket Schedules
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Runs every 6 hours
+  workflow_dispatch:      # Allows manual trigger in GitHub Actions tab
+
+jobs:
+  update-schedules:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Fetch Script
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: python fetch_schedules.py
+
+      - name: Commit and Push Updates
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add schedules.txt
+          git diff --staged --quiet || (git commit -m "chore: update cricket schedules [skip ci]" && git push)
