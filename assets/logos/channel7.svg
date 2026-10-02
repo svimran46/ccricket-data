@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#D50000"/>
+  <text x="28" y="44" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="38">7</text>
+  <text x="70" y="39" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="19">SPORT</text>
+</svg>

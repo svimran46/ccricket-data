@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#D80064"/>
+  <circle cx="36" cy="30" r="16" fill="#FFFFFF"/>
+  <text x="26" y="36" fill="#D80064" font-family="Arial, sans-serif" font-weight="bold" font-size="18">Jio</text>
+  <text x="64" y="38" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="21">Cinema</text>
+</svg>

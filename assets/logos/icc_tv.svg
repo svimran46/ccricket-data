@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#081430"/>
+  <text x="26" y="38" fill="#00D2C4" font-family="Arial, sans-serif" font-weight="900" font-size="23">ICC</text>
+  <text x="76" y="38" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="20">.tv</text>
+</svg>

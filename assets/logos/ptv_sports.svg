@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#004D25"/>
+  <circle cx="34" cy="30" r="16" fill="#FFCC00"/>
+  <text x="22" y="36" fill="#004D25" font-family="Arial, sans-serif" font-weight="bold" font-size="16">PTV</text>
+  <text x="62" y="38" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="19">SPORTS</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#001C3D"/>
+  <path d="M22 22 L35 38 L48 22" stroke="#E30613" stroke-width="4" fill="none"/>
+  <text x="60" y="38" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="18">SuperSport</text>
+</svg>
