@@ -1,0 +1,2900 @@
+{
+  "metadata": {
+    "title": "Cricket Match Schedules & Broadcasters",
+    "last_updated_utc": "2026-10-02T16:13:36.543985+00:00",
+    "total_matches": 48,
+    "categories": [
+      "International",
+      "T20 Leagues",
+      "Domestic"
+    ]
+  },
+  "matches": [
+    {
+      "match_id": 171061,
+      "category": "International",
+      "series": "Asian Games 2026",
+      "match_desc": "Bronze Medal Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 00:00 UTC",
+        "timestamp_millis": 1790985600000
+      },
+      "teams": {
+        "team1": {
+          "id": 6,
+          "name": "Bangladesh",
+          "short_name": "BAN"
+        },
+        "team2": {
+          "id": 5,
+          "name": "Sri Lanka",
+          "short_name": "SL"
+        }
+      },
+      "venue": {
+        "ground": "Korogi Sports Park",
+        "city": "Nisshin",
+        "country": "Japan"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sony Sports Network",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sony_sports.svg"
+        },
+        {
+          "channel": "Sony LIV",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sony_liv.svg"
+        },
+        {
+          "channel": "Asian Games Network",
+          "region": "Asia / Host",
+          "type": "TV",
+          "logo": null
+        }
+      ]
+    },
+    {
+      "match_id": 171070,
+      "category": "International",
+      "series": "Asian Games 2026",
+      "match_desc": "Gold Medal Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 04:30 UTC",
+        "timestamp_millis": 1791001800000
+      },
+      "teams": {
+        "team1": {
+          "id": 3,
+          "name": "Pakistan",
+          "short_name": "PAK"
+        },
+        "team2": {
+          "id": 2,
+          "name": "India",
+          "short_name": "IND"
+        }
+      },
+      "venue": {
+        "ground": "Korogi Sports Park",
+        "city": "Nisshin",
+        "country": "Japan"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sony Sports Network",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sony_sports.svg"
+        },
+        {
+          "channel": "Sony LIV",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sony_liv.svg"
+        },
+        {
+          "channel": "Asian Games Network",
+          "region": "Asia / Host",
+          "type": "TV",
+          "logo": null
+        }
+      ]
+    },
+    {
+      "match_id": 174108,
+      "category": "International",
+      "series": "Indonesia tour of South Korea, 2026",
+      "match_desc": "1st T20I",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 01:00 UTC",
+        "timestamp_millis": 1790989200000
+      },
+      "teams": {
+        "team1": {
+          "id": 299,
+          "name": "South Korea",
+          "short_name": "SKR"
+        },
+        "team2": {
+          "id": 566,
+          "name": "Indonesia",
+          "short_name": "IDN"
+        }
+      },
+      "venue": {
+        "ground": "Yeonhui Cricket Ground ",
+        "city": "Incheon",
+        "country": "South Korea "
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 151554,
+      "category": "International",
+      "series": "West Indies tour of India, 2026",
+      "match_desc": "3rd ODI",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 08:30 UTC",
+        "timestamp_millis": 1791016200000
+      },
+      "teams": {
+        "team1": {
+          "id": 2,
+          "name": "India",
+          "short_name": "IND"
+        },
+        "team2": {
+          "id": 10,
+          "name": "West Indies",
+          "short_name": "WI"
+        }
+      },
+      "venue": {
+        "ground": "PCA International Cricket Stadium, Ground A",
+        "city": "New Chandigarh",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174047,
+      "category": "International",
+      "series": "ICC Cricket World Cup League Two 2023-27",
+      "match_desc": "128th Match",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 15:00 UTC",
+        "timestamp_millis": 1791039600000
+      },
+      "teams": {
+        "team1": {
+          "id": 161,
+          "name": "Namibia",
+          "short_name": "NAM"
+        },
+        "team2": {
+          "id": 7,
+          "name": "United Arab Emirates",
+          "short_name": "UAE"
+        }
+      },
+      "venue": {
+        "ground": "Grand Prairie Stadium",
+        "city": "Dallas",
+        "country": "United States"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174123,
+      "category": "International",
+      "series": "Indonesia tour of South Korea, 2026",
+      "match_desc": "2nd T20I",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 01:00 UTC",
+        "timestamp_millis": 1791075600000
+      },
+      "teams": {
+        "team1": {
+          "id": 299,
+          "name": "South Korea",
+          "short_name": "SKR"
+        },
+        "team2": {
+          "id": 566,
+          "name": "Indonesia",
+          "short_name": "IDN"
+        }
+      },
+      "venue": {
+        "ground": "Yeonhui Cricket Ground ",
+        "city": "Incheon",
+        "country": "South Korea "
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174134,
+      "category": "International",
+      "series": "Indonesia tour of South Korea, 2026",
+      "match_desc": "3rd T20I",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 01:00 UTC",
+        "timestamp_millis": 1791162000000
+      },
+      "teams": {
+        "team1": {
+          "id": 299,
+          "name": "South Korea",
+          "short_name": "SKR"
+        },
+        "team2": {
+          "id": 566,
+          "name": "Indonesia",
+          "short_name": "IDN"
+        }
+      },
+      "venue": {
+        "ground": "Yeonhui Cricket Ground ",
+        "city": "Incheon",
+        "country": "South Korea "
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174141,
+      "category": "International",
+      "series": "Indonesia tour of South Korea, 2026",
+      "match_desc": "4th T20I",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 05:00 UTC",
+        "timestamp_millis": 1791176400000
+      },
+      "teams": {
+        "team1": {
+          "id": 299,
+          "name": "South Korea",
+          "short_name": "SKR"
+        },
+        "team2": {
+          "id": 566,
+          "name": "Indonesia",
+          "short_name": "IDN"
+        }
+      },
+      "venue": {
+        "ground": "Yeonhui Cricket Ground ",
+        "city": "Incheon",
+        "country": "South Korea "
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173701,
+      "category": "International",
+      "series": " ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026",
+      "match_desc": "2nd Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 01:15 UTC",
+        "timestamp_millis": 1791162900000
+      },
+      "teams": {
+        "team1": {
+          "id": 543,
+          "name": "Bahrain",
+          "short_name": "BHR"
+        },
+        "team2": {
+          "id": 384,
+          "name": "Thailand",
+          "short_name": "THAI"
+        }
+      },
+      "venue": {
+        "ground": "YSD-UKM Cricket Oval",
+        "city": "Bangi",
+        "country": "Malaysia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173691,
+      "category": "International",
+      "series": " ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026",
+      "match_desc": "1st Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 01:15 UTC",
+        "timestamp_millis": 1791162900000
+      },
+      "teams": {
+        "team1": {
+          "id": 555,
+          "name": "Bhutan",
+          "short_name": "BTN"
+        },
+        "team2": {
+          "id": 565,
+          "name": "Myanmar",
+          "short_name": "MMR"
+        }
+      },
+      "venue": {
+        "ground": "Bayuemas Oval",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173711,
+      "category": "International",
+      "series": " ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026",
+      "match_desc": "3rd Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 06:00 UTC",
+        "timestamp_millis": 1791180000000
+      },
+      "teams": {
+        "team1": {
+          "id": 298,
+          "name": "Kuwait",
+          "short_name": "KUW"
+        },
+        "team2": {
+          "id": 525,
+          "name": "Qatar",
+          "short_name": "QAT"
+        }
+      },
+      "venue": {
+        "ground": "Bayuemas Oval",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174057,
+      "category": "International",
+      "series": "ICC Cricket World Cup League Two 2023-27",
+      "match_desc": "129th Match",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 15:00 UTC",
+        "timestamp_millis": 1791212400000
+      },
+      "teams": {
+        "team1": {
+          "id": 15,
+          "name": "United States of America",
+          "short_name": "USA"
+        },
+        "team2": {
+          "id": 7,
+          "name": "United Arab Emirates",
+          "short_name": "UAE"
+        }
+      },
+      "venue": {
+        "ground": "Grand Prairie Stadium",
+        "city": "Dallas",
+        "country": "United States"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173721,
+      "category": "International",
+      "series": " ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026",
+      "match_desc": "4th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 01:15 UTC",
+        "timestamp_millis": 1791249300000
+      },
+      "teams": {
+        "team1": {
+          "id": 525,
+          "name": "Qatar",
+          "short_name": "QAT"
+        },
+        "team2": {
+          "id": 384,
+          "name": "Thailand",
+          "short_name": "THAI"
+        }
+      },
+      "venue": {
+        "ground": "Bayuemas Oval",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173723,
+      "category": "International",
+      "series": " ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026",
+      "match_desc": "5th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 06:00 UTC",
+        "timestamp_millis": 1791266400000
+      },
+      "teams": {
+        "team1": {
+          "id": 543,
+          "name": "Bahrain",
+          "short_name": "BHR"
+        },
+        "team2": {
+          "id": 555,
+          "name": "Bhutan",
+          "short_name": "BTN"
+        }
+      },
+      "venue": {
+        "ground": "YSD-UKM Cricket Oval",
+        "city": "Bangi",
+        "country": "Malaysia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173727,
+      "category": "International",
+      "series": " ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026",
+      "match_desc": "6th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 06:00 UTC",
+        "timestamp_millis": 1791266400000
+      },
+      "teams": {
+        "team1": {
+          "id": 298,
+          "name": "Kuwait",
+          "short_name": "KUW"
+        },
+        "team2": {
+          "id": 1804,
+          "name": "Mongolia",
+          "short_name": "MGL"
+        }
+      },
+      "venue": {
+        "ground": "Bayuemas Oval",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 151565,
+      "category": "International",
+      "series": "West Indies tour of India, 2026",
+      "match_desc": "1st T20I",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 13:30 UTC",
+        "timestamp_millis": 1791293400000
+      },
+      "teams": {
+        "team1": {
+          "id": 2,
+          "name": "India",
+          "short_name": "IND"
+        },
+        "team2": {
+          "id": 10,
+          "name": "West Indies",
+          "short_name": "WI"
+        }
+      },
+      "venue": {
+        "ground": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "city": "Lucknow",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174067,
+      "category": "International",
+      "series": "ICC Cricket World Cup League Two 2023-27",
+      "match_desc": "130th Match",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "WED, OCT 07 2026",
+        "time_utc": "2026-10-07 15:00 UTC",
+        "timestamp_millis": 1791385200000
+      },
+      "teams": {
+        "team1": {
+          "id": 15,
+          "name": "United States of America",
+          "short_name": "USA"
+        },
+        "team2": {
+          "id": 161,
+          "name": "Namibia",
+          "short_name": "NAM"
+        }
+      },
+      "venue": {
+        "ground": "Grand Prairie Stadium",
+        "city": "Dallas",
+        "country": "United States"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India / Subcontinent",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Disney+ Hotstar",
+          "region": "India / Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/hotstar.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173187,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 02 2026",
+        "time_utc": "2026-10-02 11:00 UTC",
+        "timestamp_millis": 1790938800000
+      },
+      "teams": {
+        "team1": {
+          "id": 903,
+          "name": "Mpumalanga Rhinos",
+          "short_name": "MPR"
+        },
+        "team2": {
+          "id": 1766,
+          "name": "KwaZulu-Natal Inland Tuskers",
+          "short_name": "KZNIN"
+        }
+      },
+      "venue": {
+        "ground": "Uplands College, White River",
+        "city": "Mpumalanga",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173180,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 02 2026",
+        "time_utc": "2026-10-02 16:00 UTC",
+        "timestamp_millis": 1790956800000
+      },
+      "teams": {
+        "team1": {
+          "id": 281,
+          "name": "Knights",
+          "short_name": "KNG"
+        },
+        "team2": {
+          "id": 89,
+          "name": "Titans",
+          "short_name": "TIT"
+        }
+      },
+      "venue": {
+        "ground": "Mangaung Oval",
+        "city": "Bloemfontein",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173197,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 02 2026",
+        "time_utc": "2026-10-02 16:00 UTC",
+        "timestamp_millis": 1790956800000
+      },
+      "teams": {
+        "team1": {
+          "id": 157,
+          "name": "Lions",
+          "short_name": "LIONS"
+        },
+        "team2": {
+          "id": 922,
+          "name": "North West - Eastvaal Renault Dragons",
+          "short_name": "NWEST"
+        }
+      },
+      "venue": {
+        "ground": "The Wanderers Stadium",
+        "city": "Johannesburg",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174313,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "1st Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 11:30 UTC",
+        "timestamp_millis": 1791027000000
+      },
+      "teams": {
+        "team1": {
+          "id": 2005,
+          "name": "India Champions",
+          "short_name": "INDCH"
+        },
+        "team2": {
+          "id": 2039,
+          "name": "Australia Champions",
+          "short_name": "AUSCH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174320,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "2nd Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, OCT 03 2026",
+        "time_utc": "2026-10-03 15:30 UTC",
+        "timestamp_millis": 1791041400000
+      },
+      "teams": {
+        "team1": {
+          "id": 2046,
+          "name": "Pakistan Champions",
+          "short_name": "PAKCH"
+        },
+        "team2": {
+          "id": 3613,
+          "name": "Bangladesh Champions",
+          "short_name": "BANCH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173220,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 11:00 UTC",
+        "timestamp_millis": 1791111600000
+      },
+      "teams": {
+        "team1": {
+          "id": 1766,
+          "name": "KwaZulu-Natal Inland Tuskers",
+          "short_name": "KZNIN"
+        },
+        "team2": {
+          "id": 1759,
+          "name": "Boland",
+          "short_name": "BOL"
+        }
+      },
+      "venue": {
+        "ground": "City Oval",
+        "city": "Pietermaritzburg",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173191,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 11:00 UTC",
+        "timestamp_millis": 1791111600000
+      },
+      "teams": {
+        "team1": {
+          "id": 912,
+          "name": "Limpopo",
+          "short_name": "LIMPO"
+        },
+        "team2": {
+          "id": 90,
+          "name": "Dolphins",
+          "short_name": "DOL"
+        }
+      },
+      "venue": {
+        "ground": "Polokwane Cricket Club",
+        "city": "Polokwane",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173217,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 16:00 UTC",
+        "timestamp_millis": 1791129600000
+      },
+      "teams": {
+        "team1": {
+          "id": 155,
+          "name": "Warriors",
+          "short_name": "WAR"
+        },
+        "team2": {
+          "id": 157,
+          "name": "Lions",
+          "short_name": "LIONS"
+        }
+      },
+      "venue": {
+        "ground": "St George's Park",
+        "city": "Gqeberha",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173207,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 16:00 UTC",
+        "timestamp_millis": 1791129600000
+      },
+      "teams": {
+        "team1": {
+          "id": 917,
+          "name": "Western Province",
+          "short_name": "WPR"
+        },
+        "team2": {
+          "id": 1782,
+          "name": "South Africa Emerging Players",
+          "short_name": "SAEP"
+        }
+      },
+      "venue": {
+        "ground": "Newlands",
+        "city": "Cape Town",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174330,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "3rd Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 11:30 UTC",
+        "timestamp_millis": 1791113400000
+      },
+      "teams": {
+        "team1": {
+          "id": 2014,
+          "name": "South Africa Champions",
+          "short_name": "SACH"
+        },
+        "team2": {
+          "id": 2021,
+          "name": "West Indies Champions",
+          "short_name": "WICH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174340,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "4th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SUN, OCT 04 2026",
+        "time_utc": "2026-10-04 15:30 UTC",
+        "timestamp_millis": 1791127800000
+      },
+      "teams": {
+        "team1": {
+          "id": 2005,
+          "name": "India Champions",
+          "short_name": "INDCH"
+        },
+        "team2": {
+          "id": 2030,
+          "name": "England Champions",
+          "short_name": "ENGCH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173227,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 11:00 UTC",
+        "timestamp_millis": 1791198000000
+      },
+      "teams": {
+        "team1": {
+          "id": 912,
+          "name": "Limpopo",
+          "short_name": "LIMPO"
+        },
+        "team2": {
+          "id": 1768,
+          "name": "South Western Districts",
+          "short_name": "SWD"
+        }
+      },
+      "venue": {
+        "ground": "Polokwane Cricket Club",
+        "city": "Polokwane",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174347,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "5th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 11:30 UTC",
+        "timestamp_millis": 1791199800000
+      },
+      "teams": {
+        "team1": {
+          "id": 2039,
+          "name": "Australia Champions",
+          "short_name": "AUSCH"
+        },
+        "team2": {
+          "id": 2046,
+          "name": "Pakistan Champions",
+          "short_name": "PAKCH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174351,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "6th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 15:30 UTC",
+        "timestamp_millis": 1791214200000
+      },
+      "teams": {
+        "team1": {
+          "id": 3613,
+          "name": "Bangladesh Champions",
+          "short_name": "BANCH"
+        },
+        "team2": {
+          "id": 2030,
+          "name": "England Champions",
+          "short_name": "ENGCH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174360,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "7th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 11:30 UTC",
+        "timestamp_millis": 1791286200000
+      },
+      "teams": {
+        "team1": {
+          "id": 2005,
+          "name": "India Champions",
+          "short_name": "INDCH"
+        },
+        "team2": {
+          "id": 2014,
+          "name": "South Africa Champions",
+          "short_name": "SACH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 174361,
+      "category": "T20 Leagues",
+      "series": "World Championship of Legends 2026",
+      "match_desc": "8th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 15:30 UTC",
+        "timestamp_millis": 1791300600000
+      },
+      "teams": {
+        "team1": {
+          "id": 2046,
+          "name": "Pakistan Champions",
+          "short_name": "PAKCH"
+        },
+        "team2": {
+          "id": 2021,
+          "name": "West Indies Champions",
+          "short_name": "WICH"
+        }
+      },
+      "venue": {
+        "ground": "Sharjah Cricket Stadium",
+        "city": "Sharjah",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 173237,
+      "category": "T20 Leagues",
+      "series": "CSA T20 Challenge 2026",
+      "match_desc": "Pool B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 16:00 UTC",
+        "timestamp_millis": 1791302400000
+      },
+      "teams": {
+        "team1": {
+          "id": 917,
+          "name": "Western Province",
+          "short_name": "WPR"
+        },
+        "team2": {
+          "id": 933,
+          "name": "Eastern Storm",
+          "short_name": "ESTORM"
+        }
+      },
+      "venue": {
+        "ground": "Newlands",
+        "city": "Cape Town",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 155510,
+      "category": "Domestic",
+      "series": "Australia U19 tour of India 2026",
+      "match_desc": "2nd unofficial Test, Day 1",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 03:30 UTC",
+        "timestamp_millis": 1791171000000
+      },
+      "teams": {
+        "team1": {
+          "id": 54,
+          "name": "India U19",
+          "short_name": "INDU19"
+        },
+        "team2": {
+          "id": 129,
+          "name": "Australia U19",
+          "short_name": "AUSU19"
+        }
+      },
+      "venue": {
+        "ground": "Narendra Modi Stadium B Ground",
+        "city": "Ahmedabad",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 163077,
+      "category": "Domestic",
+      "series": "Irani Cup 2026",
+      "match_desc": "Irani Cup, Day 5",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, OCT 05 2026",
+        "time_utc": "2026-10-05 04:00 UTC",
+        "timestamp_millis": 1791172800000
+      },
+      "teams": {
+        "team1": {
+          "id": 252,
+          "name": "Jammu and Kashmir",
+          "short_name": "JK"
+        },
+        "team2": {
+          "id": 82,
+          "name": "Rest of India",
+          "short_name": "ROI"
+        }
+      },
+      "venue": {
+        "ground": "Sher-i-Kashmir Stadium",
+        "city": "Srinagar",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 155510,
+      "category": "Domestic",
+      "series": "Australia U19 tour of India 2026",
+      "match_desc": "2nd unofficial Test, Day 2",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 03:30 UTC",
+        "timestamp_millis": 1791257400000
+      },
+      "teams": {
+        "team1": {
+          "id": 54,
+          "name": "India U19",
+          "short_name": "INDU19"
+        },
+        "team2": {
+          "id": 129,
+          "name": "Australia U19",
+          "short_name": "AUSU19"
+        }
+      },
+      "venue": {
+        "ground": "Narendra Modi Stadium B Ground",
+        "city": "Ahmedabad",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 155433,
+      "category": "Domestic",
+      "series": "Australia A tour of India 2026",
+      "match_desc": "1st unofficial ODI",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, OCT 06 2026",
+        "time_utc": "2026-10-06 04:00 UTC",
+        "timestamp_millis": 1791259200000
+      },
+      "teams": {
+        "team1": {
+          "id": 78,
+          "name": "India A",
+          "short_name": "INDA"
+        },
+        "team2": {
+          "id": 79,
+          "name": "Australia A",
+          "short_name": "AUSA"
+        }
+      },
+      "venue": {
+        "ground": "Cricket Association Puducherry Siechem Ground",
+        "city": "Puducherry",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166583,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "1st Match, Day 1",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "WED, OCT 07 2026",
+        "time_utc": "2026-10-06 23:30 UTC",
+        "timestamp_millis": 1791329400000
+      },
+      "teams": {
+        "team1": {
+          "id": 52,
+          "name": "Victoria",
+          "short_name": "VIC"
+        },
+        "team2": {
+          "id": 158,
+          "name": "South Australia",
+          "short_name": "SAUS"
+        }
+      },
+      "venue": {
+        "ground": "Junction Oval",
+        "city": "Melbourne",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 155510,
+      "category": "Domestic",
+      "series": "Australia U19 tour of India 2026",
+      "match_desc": "2nd unofficial Test, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "WED, OCT 07 2026",
+        "time_utc": "2026-10-07 03:30 UTC",
+        "timestamp_millis": 1791343800000
+      },
+      "teams": {
+        "team1": {
+          "id": 54,
+          "name": "India U19",
+          "short_name": "INDU19"
+        },
+        "team2": {
+          "id": 129,
+          "name": "Australia U19",
+          "short_name": "AUSU19"
+        }
+      },
+      "venue": {
+        "ground": "Narendra Modi Stadium B Ground",
+        "city": "Ahmedabad",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166583,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "1st Match, Day 2",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, OCT 08 2026",
+        "time_utc": "2026-10-07 23:30 UTC",
+        "timestamp_millis": 1791415800000
+      },
+      "teams": {
+        "team1": {
+          "id": 52,
+          "name": "Victoria",
+          "short_name": "VIC"
+        },
+        "team2": {
+          "id": 158,
+          "name": "South Australia",
+          "short_name": "SAUS"
+        }
+      },
+      "venue": {
+        "ground": "Junction Oval",
+        "city": "Melbourne",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166587,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "2nd Match, Day 1",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, OCT 08 2026",
+        "time_utc": "2026-10-07 23:30 UTC",
+        "timestamp_millis": 1791415800000
+      },
+      "teams": {
+        "team1": {
+          "id": 104,
+          "name": "New South Wales",
+          "short_name": "NSW"
+        },
+        "team2": {
+          "id": 166,
+          "name": "Tasmania",
+          "short_name": "TAS"
+        }
+      },
+      "venue": {
+        "ground": "Cricket Central",
+        "city": "Sydney",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166600,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "3rd Match, Day 1",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, OCT 08 2026",
+        "time_utc": "2026-10-08 02:30 UTC",
+        "timestamp_millis": 1791426600000
+      },
+      "teams": {
+        "team1": {
+          "id": 87,
+          "name": "Western Australia",
+          "short_name": "WA"
+        },
+        "team2": {
+          "id": 164,
+          "name": "Queensland",
+          "short_name": "QL"
+        }
+      },
+      "venue": {
+        "ground": "W.A.C.A. Ground",
+        "city": "Perth",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 155510,
+      "category": "Domestic",
+      "series": "Australia U19 tour of India 2026",
+      "match_desc": "2nd unofficial Test, Day 4",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, OCT 08 2026",
+        "time_utc": "2026-10-08 03:30 UTC",
+        "timestamp_millis": 1791430200000
+      },
+      "teams": {
+        "team1": {
+          "id": 54,
+          "name": "India U19",
+          "short_name": "INDU19"
+        },
+        "team2": {
+          "id": 129,
+          "name": "Australia U19",
+          "short_name": "AUSU19"
+        }
+      },
+      "venue": {
+        "ground": "Narendra Modi Stadium B Ground",
+        "city": "Ahmedabad",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166583,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "1st Match, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 09 2026",
+        "time_utc": "2026-10-08 23:30 UTC",
+        "timestamp_millis": 1791502200000
+      },
+      "teams": {
+        "team1": {
+          "id": 52,
+          "name": "Victoria",
+          "short_name": "VIC"
+        },
+        "team2": {
+          "id": 158,
+          "name": "South Australia",
+          "short_name": "SAUS"
+        }
+      },
+      "venue": {
+        "ground": "Junction Oval",
+        "city": "Melbourne",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166587,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "2nd Match, Day 2",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 09 2026",
+        "time_utc": "2026-10-08 23:30 UTC",
+        "timestamp_millis": 1791502200000
+      },
+      "teams": {
+        "team1": {
+          "id": 104,
+          "name": "New South Wales",
+          "short_name": "NSW"
+        },
+        "team2": {
+          "id": 166,
+          "name": "Tasmania",
+          "short_name": "TAS"
+        }
+      },
+      "venue": {
+        "ground": "Cricket Central",
+        "city": "Sydney",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 166600,
+      "category": "Domestic",
+      "series": "Sheffield Shield 2026-27",
+      "match_desc": "3rd Match, Day 2",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 09 2026",
+        "time_utc": "2026-10-09 02:30 UTC",
+        "timestamp_millis": 1791513000000
+      },
+      "teams": {
+        "team1": {
+          "id": 87,
+          "name": "Western Australia",
+          "short_name": "WA"
+        },
+        "team2": {
+          "id": 164,
+          "name": "Queensland",
+          "short_name": "QL"
+        }
+      },
+      "venue": {
+        "ground": "W.A.C.A. Ground",
+        "city": "Perth",
+        "country": "Australia"
+      },
+      "broadcasters": [
+        {
+          "channel": "Seven Network",
+          "region": "Australia",
+          "type": "Free-to-Air TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+        },
+        {
+          "channel": "Fox Cricket",
+          "region": "Australia",
+          "type": "Subscription TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 155444,
+      "category": "Domestic",
+      "series": "Australia A tour of India 2026",
+      "match_desc": "2nd unofficial ODI",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, OCT 09 2026",
+        "time_utc": "2026-10-09 04:00 UTC",
+        "timestamp_millis": 1791518400000
+      },
+      "teams": {
+        "team1": {
+          "id": 78,
+          "name": "India A",
+          "short_name": "INDA"
+        },
+        "team2": {
+          "id": 79,
+          "name": "Australia A",
+          "short_name": "AUSA"
+        }
+      },
+      "venue": {
+        "ground": "Cricket Association Puducherry Siechem Ground",
+        "city": "Puducherry",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "Sports18",
+          "region": "India (Host)",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India (Host)",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & Canada",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    }
+  ]
+}

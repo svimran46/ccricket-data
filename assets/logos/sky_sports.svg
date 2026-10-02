@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#001937"/>
+  <text x="20" y="39" fill="#E60000" font-family="Arial, sans-serif" font-weight="900" font-size="24">sky</text>
+  <text x="75" y="39" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="22">sports</text>
+</svg>

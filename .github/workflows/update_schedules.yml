@@ -29,5 +29,5 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add schedules.txt
-          git diff --staged --quiet || (git commit -m "chore: update cricket schedules [skip ci]" && git push)
+          git add schedules.json assets/
+          git diff --staged --quiet || (git commit -m "chore: update cricket schedules JSON [skip ci]" && git push)
