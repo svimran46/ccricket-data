@@ -1,0 +1,318 @@
+============================================================
+CRICKET MATCH SCHEDULES (Generated: 2026-10-02 15:27:10 UTC)
+============================================================
+
+############################################################
+  CATEGORY: INTERNATIONAL
+############################################################
+
+--- Date: SAT, OCT 03 2026 ---
+  • Series: Asian Games 2026
+    Match : Bronze Medal Match - Bangladesh vs Sri Lanka
+    Time  : 2026-10-03 00:00 UTC
+    Venue : Korogi Sports Park, Nisshin
+    Status: Scheduled
+
+  • Series: Asian Games 2026
+    Match : Gold Medal Match - Pakistan vs India
+    Time  : 2026-10-03 04:30 UTC
+    Venue : Korogi Sports Park, Nisshin
+    Status: Scheduled
+
+  • Series: Indonesia tour of South Korea, 2026
+    Match : 1st T20I - South Korea vs Indonesia
+    Time  : 2026-10-03 01:00 UTC
+    Venue : Yeonhui Cricket Ground , Incheon
+    Status: Scheduled
+
+  • Series: West Indies tour of India, 2026
+    Match : 3rd ODI - India vs West Indies
+    Time  : 2026-10-03 08:30 UTC
+    Venue : PCA International Cricket Stadium, Ground A, New Chandigarh
+    Status: Scheduled
+
+  • Series: ICC Cricket World Cup League Two 2023-27
+    Match : 128th Match - Namibia vs United Arab Emirates
+    Time  : 2026-10-03 15:00 UTC
+    Venue : Grand Prairie Stadium, Dallas
+    Status: Scheduled
+
+--- Date: SUN, OCT 04 2026 ---
+  • Series: Indonesia tour of South Korea, 2026
+    Match : 2nd T20I - South Korea vs Indonesia
+    Time  : 2026-10-04 01:00 UTC
+    Venue : Yeonhui Cricket Ground , Incheon
+    Status: Scheduled
+
+--- Date: MON, OCT 05 2026 ---
+  • Series: Indonesia tour of South Korea, 2026
+    Match : 3rd T20I - South Korea vs Indonesia
+    Time  : 2026-10-05 01:00 UTC
+    Venue : Yeonhui Cricket Ground , Incheon
+    Status: Scheduled
+
+  • Series: Indonesia tour of South Korea, 2026
+    Match : 4th T20I - South Korea vs Indonesia
+    Time  : 2026-10-05 05:00 UTC
+    Venue : Yeonhui Cricket Ground , Incheon
+    Status: Scheduled
+
+  • Series:  ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026
+    Match : 2nd Match - Bahrain vs Thailand
+    Time  : 2026-10-05 01:15 UTC
+    Venue : YSD-UKM Cricket Oval, Bangi
+    Status: Scheduled
+
+  • Series:  ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026
+    Match : 1st Match - Bhutan vs Myanmar
+    Time  : 2026-10-05 01:15 UTC
+    Venue : Bayuemas Oval, Kuala Lumpur
+    Status: Scheduled
+
+  • Series:  ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026
+    Match : 3rd Match - Kuwait vs Qatar
+    Time  : 2026-10-05 06:00 UTC
+    Venue : Bayuemas Oval, Kuala Lumpur
+    Status: Scheduled
+
+  • Series: ICC Cricket World Cup League Two 2023-27
+    Match : 129th Match - United States of America vs United Arab Emirates
+    Time  : 2026-10-05 15:00 UTC
+    Venue : Grand Prairie Stadium, Dallas
+    Status: Scheduled
+
+--- Date: TUE, OCT 06 2026 ---
+  • Series:  ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026
+    Match : 4th Match - Qatar vs Thailand
+    Time  : 2026-10-06 01:15 UTC
+    Venue : Bayuemas Oval, Kuala Lumpur
+    Status: Scheduled
+
+  • Series:  ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026
+    Match : 5th Match - Bahrain vs Bhutan
+    Time  : 2026-10-06 06:00 UTC
+    Venue : YSD-UKM Cricket Oval, Bangi
+    Status: Scheduled
+
+  • Series:  ICC Men's T20 World Cup Asia Sub Regional Qualifier A 2026
+    Match : 6th Match - Kuwait vs Mongolia
+    Time  : 2026-10-06 06:00 UTC
+    Venue : Bayuemas Oval, Kuala Lumpur
+    Status: Scheduled
+
+  • Series: West Indies tour of India, 2026
+    Match : 1st T20I - India vs West Indies
+    Time  : 2026-10-06 13:30 UTC
+    Venue : Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow
+    Status: Scheduled
+
+--- Date: WED, OCT 07 2026 ---
+  • Series: ICC Cricket World Cup League Two 2023-27
+    Match : 130th Match - United States of America vs Namibia
+    Time  : 2026-10-07 15:00 UTC
+    Venue : Grand Prairie Stadium, Dallas
+    Status: Scheduled
+
+############################################################
+  CATEGORY: T20 LEAGUES
+############################################################
+
+--- Date: FRI, OCT 02 2026 ---
+  • Series: CSA T20 Challenge 2026
+    Match : Pool B - Mpumalanga Rhinos vs KwaZulu-Natal Inland Tuskers
+    Time  : 2026-10-02 11:00 UTC
+    Venue : Uplands College, White River, Mpumalanga
+    Status: Scheduled
+
+  • Series: CSA T20 Challenge 2026
+    Match : Pool B - Knights vs Titans
+    Time  : 2026-10-02 16:00 UTC
+    Venue : Mangaung Oval, Bloemfontein
+    Status: Scheduled
+
+  • Series: CSA T20 Challenge 2026
+    Match : Pool A - Lions vs North West - Eastvaal Renault Dragons
+    Time  : 2026-10-02 16:00 UTC
+    Venue : The Wanderers Stadium, Johannesburg
+    Status: Scheduled
+
+--- Date: SAT, OCT 03 2026 ---
+  • Series: World Championship of Legends 2026
+    Match : 1st Match - India Champions vs Australia Champions
+    Time  : 2026-10-03 11:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+  • Series: World Championship of Legends 2026
+    Match : 2nd Match - Pakistan Champions vs Bangladesh Champions
+    Time  : 2026-10-03 15:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+--- Date: SUN, OCT 04 2026 ---
+  • Series: CSA T20 Challenge 2026
+    Match : Pool B - KwaZulu-Natal Inland Tuskers vs Boland
+    Time  : 2026-10-04 11:00 UTC
+    Venue : City Oval, Pietermaritzburg
+    Status: Scheduled
+
+  • Series: CSA T20 Challenge 2026
+    Match : Pool A - Limpopo vs Dolphins
+    Time  : 2026-10-04 11:00 UTC
+    Venue : Polokwane Cricket Club, Polokwane
+    Status: Scheduled
+
+  • Series: CSA T20 Challenge 2026
+    Match : Pool A - Warriors vs Lions
+    Time  : 2026-10-04 16:00 UTC
+    Venue : St George's Park, Gqeberha
+    Status: Scheduled
+
+  • Series: CSA T20 Challenge 2026
+    Match : Pool B - Western Province vs South Africa Emerging Players
+    Time  : 2026-10-04 16:00 UTC
+    Venue : Newlands, Cape Town
+    Status: Scheduled
+
+  • Series: World Championship of Legends 2026
+    Match : 3rd Match - South Africa Champions vs West Indies Champions
+    Time  : 2026-10-04 11:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+  • Series: World Championship of Legends 2026
+    Match : 4th Match - India Champions vs England Champions
+    Time  : 2026-10-04 15:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+--- Date: MON, OCT 05 2026 ---
+  • Series: CSA T20 Challenge 2026
+    Match : Pool A - Limpopo vs South Western Districts
+    Time  : 2026-10-05 11:00 UTC
+    Venue : Polokwane Cricket Club, Polokwane
+    Status: Scheduled
+
+  • Series: World Championship of Legends 2026
+    Match : 5th Match - Australia Champions vs Pakistan Champions
+    Time  : 2026-10-05 11:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+  • Series: World Championship of Legends 2026
+    Match : 6th Match - Bangladesh Champions vs England Champions
+    Time  : 2026-10-05 15:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+--- Date: TUE, OCT 06 2026 ---
+  • Series: World Championship of Legends 2026
+    Match : 7th Match - India Champions vs South Africa Champions
+    Time  : 2026-10-06 11:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+  • Series: World Championship of Legends 2026
+    Match : 8th Match - Pakistan Champions vs West Indies Champions
+    Time  : 2026-10-06 15:30 UTC
+    Venue : Sharjah Cricket Stadium, Sharjah
+    Status: Scheduled
+
+  • Series: CSA T20 Challenge 2026
+    Match : Pool B - Western Province vs Eastern Storm
+    Time  : 2026-10-06 16:00 UTC
+    Venue : Newlands, Cape Town
+    Status: Scheduled
+
+############################################################
+  CATEGORY: DOMESTIC
+############################################################
+
+--- Date: MON, OCT 05 2026 ---
+  • Series: Australia U19 tour of India 2026
+    Match : 2nd unofficial Test, Day 1 - India U19 vs Australia U19
+    Time  : 2026-10-05 03:30 UTC
+    Venue : Narendra Modi Stadium B Ground, Ahmedabad
+    Status: Scheduled
+
+  • Series: Irani Cup 2026
+    Match : Irani Cup, Day 5 - Jammu and Kashmir vs Rest of India
+    Time  : 2026-10-05 04:00 UTC
+    Venue : Sher-i-Kashmir Stadium, Srinagar
+    Status: Scheduled
+
+--- Date: TUE, OCT 06 2026 ---
+  • Series: Australia U19 tour of India 2026
+    Match : 2nd unofficial Test, Day 2 - India U19 vs Australia U19
+    Time  : 2026-10-06 03:30 UTC
+    Venue : Narendra Modi Stadium B Ground, Ahmedabad
+    Status: Scheduled
+
+  • Series: Australia A tour of India 2026
+    Match : 1st unofficial ODI - India A vs Australia A
+    Time  : 2026-10-06 04:00 UTC
+    Venue : Cricket Association Puducherry Siechem Ground, Puducherry
+    Status: Scheduled
+
+--- Date: WED, OCT 07 2026 ---
+  • Series: Sheffield Shield 2026-27
+    Match : 1st Match, Day 1 - Victoria vs South Australia
+    Time  : 2026-10-06 23:30 UTC
+    Venue : Junction Oval, Melbourne
+    Status: Scheduled
+
+  • Series: Australia U19 tour of India 2026
+    Match : 2nd unofficial Test, Day 3 - India U19 vs Australia U19
+    Time  : 2026-10-07 03:30 UTC
+    Venue : Narendra Modi Stadium B Ground, Ahmedabad
+    Status: Scheduled
+
+--- Date: THU, OCT 08 2026 ---
+  • Series: Sheffield Shield 2026-27
+    Match : 1st Match, Day 2 - Victoria vs South Australia
+    Time  : 2026-10-07 23:30 UTC
+    Venue : Junction Oval, Melbourne
+    Status: Scheduled
+
+  • Series: Sheffield Shield 2026-27
+    Match : 2nd Match, Day 1 - New South Wales vs Tasmania
+    Time  : 2026-10-07 23:30 UTC
+    Venue : Cricket Central, Sydney
+    Status: Scheduled
+
+  • Series: Sheffield Shield 2026-27
+    Match : 3rd Match, Day 1 - Western Australia vs Queensland
+    Time  : 2026-10-08 02:30 UTC
+    Venue : W.A.C.A. Ground, Perth
+    Status: Scheduled
+
+  • Series: Australia U19 tour of India 2026
+    Match : 2nd unofficial Test, Day 4 - India U19 vs Australia U19
+    Time  : 2026-10-08 03:30 UTC
+    Venue : Narendra Modi Stadium B Ground, Ahmedabad
+    Status: Scheduled
+
+--- Date: FRI, OCT 09 2026 ---
+  • Series: Sheffield Shield 2026-27
+    Match : 1st Match, Day 3 - Victoria vs South Australia
+    Time  : 2026-10-08 23:30 UTC
+    Venue : Junction Oval, Melbourne
+    Status: Scheduled
+
+  • Series: Sheffield Shield 2026-27
+    Match : 2nd Match, Day 2 - New South Wales vs Tasmania
+    Time  : 2026-10-08 23:30 UTC
+    Venue : Cricket Central, Sydney
+    Status: Scheduled
+
+  • Series: Sheffield Shield 2026-27
+    Match : 3rd Match, Day 2 - Western Australia vs Queensland
+    Time  : 2026-10-09 02:30 UTC
+    Venue : W.A.C.A. Ground, Perth
+    Status: Scheduled
+
+  • Series: Australia A tour of India 2026
+    Match : 2nd unofficial ODI - India A vs Australia A
+    Time  : 2026-10-09 04:00 UTC
+    Venue : Cricket Association Puducherry Siechem Ground, Puducherry
+    Status: Scheduled
