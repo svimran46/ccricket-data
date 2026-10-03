@@ -1,16 +1,23 @@
 import os
 import re
 import json
+import time
+import html
 import requests
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID", "@sportzfyplay")
 HISTORY_FILE = "posted_matches.json"
 
-ALLOWED_SPORTS = {"football", "cricket"}
+ALLOWED_SPORTS = {"football", "soccer", "cricket"}
 
 SPORT_META = {
     "football": {
+        "emoji": "⚽",
+        "title": "Football Live",
+        "tags": "#Football #LiveStream #SportzfyPlay"
+    },
+    "soccer": {
         "emoji": "⚽",
         "title": "Football Live",
         "tags": "#Football #LiveStream #SportzfyPlay"
@@ -45,24 +52,30 @@ def save_posted(posted_set):
 def get_clean_token():
     token = (BOT_TOKEN or "").strip().strip('"').strip("'")
     if token.lower().startswith("bot"):
-        token = token[3:]
+        token = token[3:].strip()
     return token
 
 def get_clean_channel():
     channel = (CHANNEL_ID or "").strip().strip('"').strip("'")
     if "t.me/" in channel:
         channel = "@" + channel.split("t.me/")[-1].strip("/")
+    # Auto-add '@' if user omitted it on public username (not numeric ID)
+    if channel and not channel.startswith("@") and not channel.startswith("-") and not channel.replace("-", "").isdigit():
+        channel = "@" + channel
     return channel
 
 def verify_bot():
     token = get_clean_token()
+    if not token:
+        print("❌ TELEGRAM_BOT_TOKEN is empty!")
+        return False
     url = f"https://api.telegram.org/bot{token}/getMe"
     try:
         r = requests.get(url, timeout=15)
         res = r.json()
         if res.get("ok"):
             bot_info = res["result"]
-            print(f"🤖 Connected as Bot: @{bot_info.get('username')} ({bot_info.get('first_name')})")
+            print(f"🤖 Connected successfully as Bot: @{bot_info.get('username')} ({bot_info.get('first_name')})")
             return True
         else:
             print(f"❌ Telegram Bot Token Invalid! Response: {res}")
@@ -74,7 +87,6 @@ def verify_bot():
 def send_telegram_request(endpoint, payload):
     token = get_clean_token()
     url = f"https://api.telegram.org/bot{token}/{endpoint}"
-    # Ensure channel ID is sanitized
     payload["chat_id"] = get_clean_channel()
     try:
         resp = requests.post(url, json=payload, timeout=25)
@@ -102,15 +114,21 @@ def post_match_to_telegram(match):
     
     start_time = match.get("startTime", "Soon")
     match_date = match.get("matchDate", "")
+
+    # HTML-escape dynamic strings to prevent HTML parse crashes in Telegram
+    safe_name = html.escape(str(event_name))
+    safe_title = html.escape(str(meta['title']))
+    safe_date = html.escape(str(match_date))
+    safe_time = html.escape(str(start_time))
     
     caption = (
-        f"{meta['emoji']} <b>{event_name}</b>\n\n"
-        f"🏆 <b>Category:</b> {meta['title']}\n"
+        f"{meta['emoji']} <b>{safe_name}</b>\n\n"
+        f"🏆 <b>Category:</b> {safe_title}\n"
     )
     if match_date:
-        caption += f"📅 <b>Date:</b> {match_date}\n"
+        caption += f"📅 <b>Date:</b> {safe_date}\n"
     if start_time:
-        caption += f"⏰ <b>Time:</b> {start_time} UTC\n"
+        caption += f"⏰ <b>Time:</b> {safe_time} UTC\n"
         
     caption += (
         f"\n▶️ <b>Watch Free in HD:</b>\n"
@@ -120,10 +138,9 @@ def post_match_to_telegram(match):
 
     poster = match.get("poster")
     if poster and str(poster).startswith("http"):
-        # Try sending photo with caption
         print(f"Attempting sendPhoto for: {event_name}")
         success = send_telegram_request("sendPhoto", {
-            "chat_id": CHANNEL_ID,
+            "chat_id": get_clean_channel(),
             "photo": poster,
             "caption": caption,
             "parse_mode": "HTML"
@@ -134,7 +151,7 @@ def post_match_to_telegram(match):
 
     # Fallback to sendMessage (text only)
     return send_telegram_request("sendMessage", {
-        "chat_id": CHANNEL_ID,
+        "chat_id": get_clean_channel(),
         "text": caption,
         "parse_mode": "HTML",
         "disable_web_page_preview": False
@@ -171,7 +188,7 @@ def main():
     if not verify_bot():
         raise SystemExit("❌ ERROR: Could not connect to Telegram bot! Check your TELEGRAM_BOT_TOKEN in GitHub secrets.")
 
-    print(f"Target channel: {get_clean_channel()}")
+    print(f"🎯 Target channel: {get_clean_channel()}")
     posted = load_posted()
     print(f"Currently remembered matches: {len(posted)}")
 
@@ -205,6 +222,8 @@ def main():
             posted.add(key)
             new_posts += 1
             print(f"✅ Successfully posted {key}")
+            # Anti-flood delay: wait 2 seconds between posts
+            time.sleep(2)
         else:
             errors += 1
             print(f"❌ Failed to post {key}")
