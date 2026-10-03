@@ -1,9 +1,7 @@
 import os
 import re
 import json
-import urllib.request
-import urllib.parse
-import ssl
+import requests
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID", "@sportzfyplay")
@@ -24,11 +22,17 @@ SPORT_META = {
     }
 }
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
+
 def load_posted():
     if os.path.exists(HISTORY_FILE):
         try:
             with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-                return set(json.load(f))
+                data = json.load(f)
+                return set(data)
         except Exception as e:
             print(f"Warning: Could not read history file: {e}")
             return set()
@@ -40,18 +44,15 @@ def save_posted(posted_set):
 
 def send_telegram_request(endpoint, payload):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/{endpoint}"
-    data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(
-        url,
-        data=data,
-        headers={"Content-Type": "application/json"}
-    )
-    ctx = ssl.create_default_context()
     try:
-        with urllib.request.urlopen(req, context=ctx, timeout=20) as resp:
-            return resp.status == 200
+        resp = requests.post(url, json=payload, timeout=25)
+        res_json = resp.json()
+        if not resp.ok or not res_json.get("ok"):
+            print(f"❌ Telegram API Error on {endpoint}: {resp.status_code} - {resp.text}")
+            return False
+        return True
     except Exception as e:
-        print(f"Telegram API Error ({endpoint}): {e}")
+        print(f"❌ Request Exception on {endpoint}: {e}")
         return False
 
 def post_match_to_telegram(match):
@@ -87,7 +88,8 @@ def post_match_to_telegram(match):
 
     poster = match.get("poster")
     if poster and str(poster).startswith("http"):
-        # Send Photo
+        # Try sending photo with caption
+        print(f"Attempting sendPhoto for: {event_name}")
         success = send_telegram_request("sendPhoto", {
             "chat_id": CHANNEL_ID,
             "photo": poster,
@@ -96,9 +98,9 @@ def post_match_to_telegram(match):
         })
         if success:
             return True
-        print("Falling back to text message...")
+        print(f"Photo failed, falling back to sendMessage for: {event_name}")
 
-    # Fallback to text
+    # Fallback to sendMessage (text only)
     return send_telegram_request("sendMessage", {
         "chat_id": CHANNEL_ID,
         "text": caption,
@@ -107,17 +109,15 @@ def post_match_to_telegram(match):
     })
 
 def fetch_page_matches(url):
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-    )
-    ctx = ssl.create_default_context()
     matches = []
     try:
-        with urllib.request.urlopen(req, context=ctx, timeout=20) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-        
-        matches_raw = re.findall(r'&quot;match&quot;:\[0,(\{.*?\})\]', html)
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        print(f"GET {url} -> Status {resp.status_code}")
+        if not resp.ok:
+            return matches
+
+        matches_raw = re.findall(r'&quot;match&quot;:\[0,(\{.*?\})\]', resp.text)
+        print(f"Found {len(matches_raw)} raw matches in {url}")
         for raw in matches_raw:
             clean = raw.replace('&quot;', '"')
             try:
@@ -132,43 +132,53 @@ def fetch_page_matches(url):
 
 def main():
     if not BOT_TOKEN:
-        raise SystemExit("ERROR: TELEGRAM_BOT_TOKEN secret is not set in GitHub repository secrets!")
+        raise SystemExit("❌ ERROR: TELEGRAM_BOT_TOKEN secret is not set in GitHub repository secrets!")
     if not CHANNEL_ID:
-        raise SystemExit("ERROR: TELEGRAM_CHANNEL_ID secret is not set in GitHub repository secrets!")
+        raise SystemExit("❌ ERROR: TELEGRAM_CHANNEL_ID secret is not set in GitHub repository secrets!")
 
+    print(f"Channel target: {CHANNEL_ID}")
     posted = load_posted()
     print(f"Currently remembered matches: {len(posted)}")
 
-    # Fetch from home page and schedule page
     all_found = []
     all_found.extend(fetch_page_matches("https://sportzfyplay.com/"))
     all_found.extend(fetch_page_matches("https://sportzfyplay.com/schedule"))
 
-    # De-duplicate matches by slug or ID
+    # De-duplicate matches
     unique_matches = {}
     for m in all_found:
         key = m.get("slug") or m.get("id")
         if key and key not in unique_matches:
             unique_matches[key] = m
 
+    print(f"Total unique matches scraped: {len(unique_matches)}")
+
     new_posts = 0
+    errors = 0
     for key, match in unique_matches.items():
         sport = (match.get("sport") or "").lower().strip()
         
-        # FILTER ONLY FOOTBALL AND CRICKET
+        # Only Football and Cricket
         if sport not in ALLOWED_SPORTS:
             continue
 
         if key in posted:
             continue
 
-        print(f"Found new {sport} match: {match.get('eventName')} ({key})")
+        print(f"🚀 Posting {sport.upper()} match: {match.get('eventName')} ({key})")
         if post_match_to_telegram(match):
             posted.add(key)
             new_posts += 1
+            print(f"✅ Successfully posted {key}")
+        else:
+            errors += 1
+            print(f"❌ Failed to post {key}")
 
-    print(f"Finished. Posted {new_posts} new Football/Cricket matches.")
+    print(f"Finished. Posted {new_posts} new matches. Errors: {errors}")
     save_posted(posted)
+
+    if errors > 0 and new_posts == 0:
+        raise RuntimeError(f"Failed to post {errors} matches to Telegram. Check the error logs above for details.")
 
 if __name__ == "__main__":
     main()
