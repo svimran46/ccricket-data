@@ -4,10 +4,27 @@ import json
 import time
 import html
 import requests
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID", "@sportzfyplay")
 HISTORY_FILE = "posted_matches.json"
+
+# Timezone that sportzfyplay.com uses for matchDate/startTime.
+# Verified: UEFA qualifiers (20:45 CEST kick-off) are listed as 19:45 -> UK time.
+# Europe/London handles GMT/BST daylight saving automatically.
+SOURCE_TZ = ZoneInfo(os.getenv("SOURCE_TIMEZONE", "Europe/London"))
+
+# Capital-city timezones shown in each post (flag, label, IANA zone)
+DISPLAY_TIMEZONES = [
+    ("🇧🇩", "Bangladesh (Dhaka)", "Asia/Dhaka"),
+    ("🇮🇳", "India (New Delhi)", "Asia/Kolkata"),
+    ("🇺🇸", "USA (Washington DC)", "America/New_York"),
+    ("🇮🇩", "Indonesia (Jakarta)", "Asia/Jakarta"),
+    ("🇳🇬", "Nigeria (Abuja)", "Africa/Lagos"),
+    ("🇸🇬", "Singapore", "Asia/Singapore"),
+]
 
 ALLOWED_SPORTS = {"football", "soccer", "cricket"}
 
@@ -99,6 +116,22 @@ def send_telegram_request(endpoint, payload):
         print(f"❌ Request Exception on {endpoint}: {e}")
         return False
 
+def build_time_block(match_date, start_time):
+    """Return HTML lines with kick-off time in each capital. Falls back to raw text if parsing fails."""
+    try:
+        kickoff = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=SOURCE_TZ)
+    except (ValueError, TypeError):
+        if start_time:
+            return f"⏰ <b>Time:</b> {html.escape(f'{match_date} {start_time}'.strip())}\n"
+        return ""
+
+    lines = ["\n🕒 <b>Kick-off Time:</b>"]
+    for flag, label, tz in DISPLAY_TIMEZONES:
+        local = kickoff.astimezone(ZoneInfo(tz))
+        # e.g. "00:45 · Sun 04 Oct" (date shown so day changes are clear)
+        lines.append(f"{flag} {label}: <b>{local.strftime('%H:%M')}</b> · {local.strftime('%a %d %b')}")
+    return "\n".join(lines) + "\n"
+
 def post_match_to_telegram(match):
     sport = (match.get("sport") or "").lower().strip()
     meta = SPORT_META.get(sport, {"emoji": "🏆", "title": "Sports Live", "tags": "#Sports #SportzfyPlay"})
@@ -117,23 +150,18 @@ def post_match_to_telegram(match):
     slug = slug.strip("/")
     match_url = f"https://sportzfyplay.com/matches/{slug}"
     
-    start_time = match.get("startTime", "Soon")
-    match_date = match.get("matchDate", "")
+    start_time = match.get("startTime") or ""
+    match_date = match.get("matchDate") or ""
 
     # HTML-escape dynamic strings to prevent HTML parse crashes in Telegram
     safe_name = html.escape(str(event_name))
     safe_title = html.escape(str(meta['title']))
-    safe_date = html.escape(str(match_date))
-    safe_time = html.escape(str(start_time))
-    
+
     caption = (
         f"{meta['emoji']} <b>{safe_name}</b>\n\n"
         f"🏆 <b>Category:</b> {safe_title}\n"
     )
-    if match_date:
-        caption += f"📅 <b>Date:</b> {safe_date}\n"
-    if start_time:
-        caption += f"⏰ <b>Time:</b> {safe_time} UTC\n"
+    caption += build_time_block(match_date, start_time)
         
     caption += (
         f"\n▶️ <b>Watch Free in HD:</b>\n"
