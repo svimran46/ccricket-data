@@ -42,8 +42,40 @@ def save_posted(posted_set):
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(sorted(list(posted_set)), f, indent=2)
 
+def get_clean_token():
+    token = (BOT_TOKEN or "").strip().strip('"').strip("'")
+    if token.lower().startswith("bot"):
+        token = token[3:]
+    return token
+
+def get_clean_channel():
+    channel = (CHANNEL_ID or "").strip().strip('"').strip("'")
+    if "t.me/" in channel:
+        channel = "@" + channel.split("t.me/")[-1].strip("/")
+    return channel
+
+def verify_bot():
+    token = get_clean_token()
+    url = f"https://api.telegram.org/bot{token}/getMe"
+    try:
+        r = requests.get(url, timeout=15)
+        res = r.json()
+        if res.get("ok"):
+            bot_info = res["result"]
+            print(f"🤖 Connected as Bot: @{bot_info.get('username')} ({bot_info.get('first_name')})")
+            return True
+        else:
+            print(f"❌ Telegram Bot Token Invalid! Response: {res}")
+            return False
+    except Exception as e:
+        print(f"❌ Failed to reach Telegram API: {e}")
+        return False
+
 def send_telegram_request(endpoint, payload):
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/{endpoint}"
+    token = get_clean_token()
+    url = f"https://api.telegram.org/bot{token}/{endpoint}"
+    # Ensure channel ID is sanitized
+    payload["chat_id"] = get_clean_channel()
     try:
         resp = requests.post(url, json=payload, timeout=25)
         res_json = resp.json()
@@ -136,7 +168,10 @@ def main():
     if not CHANNEL_ID:
         raise SystemExit("❌ ERROR: TELEGRAM_CHANNEL_ID secret is not set in GitHub repository secrets!")
 
-    print(f"Channel target: {CHANNEL_ID}")
+    if not verify_bot():
+        raise SystemExit("❌ ERROR: Could not connect to Telegram bot! Check your TELEGRAM_BOT_TOKEN in GitHub secrets.")
+
+    print(f"Target channel: {get_clean_channel()}")
     posted = load_posted()
     print(f"Currently remembered matches: {len(posted)}")
 
