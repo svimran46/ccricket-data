@@ -190,6 +190,91 @@ def post_match_to_telegram(match):
         "disable_web_page_preview": False
     })
 
+# ---------------------------------------------------------------- DISCORD ---
+
+DISCORD_WEBHOOK_URL = (os.getenv("DISCORD_WEBHOOK_URL") or "").strip().strip('"').strip("'")
+DISCORD_COLORS = {"football": 0x1ED760, "soccer": 0x1ED760, "cricket": 0x3B82F6}
+
+def send_discord_webhook(payload, retries=3):
+    """POST to the Discord webhook, honouring Discord's 429 rate-limit retry_after."""
+    for attempt in range(retries):
+        try:
+            resp = requests.post(f"{DISCORD_WEBHOOK_URL}?wait=true", json=payload, timeout=25)
+        except Exception as e:
+            print(f"❌ Discord request exception: {e}")
+            return False
+        if resp.status_code == 429:
+            try:
+                wait = float(resp.json().get("retry_after", 2))
+            except Exception:
+                wait = 2.0
+            print(f"⏳ Discord rate limited, retrying in {wait:.1f}s")
+            time.sleep(wait + 0.5)
+            continue
+        if resp.ok:
+            return True
+        print(f"❌ Discord API Error: {resp.status_code} - {resp.text}")
+        return False
+    return False
+
+def post_match_to_discord(match):
+    sport = (match.get("sport") or "").lower().strip()
+    meta = SPORT_META.get(sport, {"emoji": "🏆", "title": "Sports Live", "tags": ""})
+
+    event_name = match.get("eventName")
+    home = match.get("homeTeam") or ""
+    away = match.get("awayTeam") or ""
+    if not event_name:
+        event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
+
+    slug = str(match.get("slug") or match.get("id") or "").strip()
+    for prefix in ("/matches/", "matches/"):
+        if slug.startswith(prefix):
+            slug = slug[len(prefix):]
+    slug = slug.strip("/")
+    match_url = f"https://sportzfyplay.com/matches/{slug}"
+
+    match_date = match.get("matchDate") or ""
+    start_time = match.get("startTime") or ""
+
+    description = f"🏆 **Category:** {meta['title']}\n"
+    fields = []
+    try:
+        kickoff = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=SOURCE_TZ)
+        unix = int(kickoff.timestamp())
+        # Discord renders <t:...> in every viewer's OWN local time automatically
+        description += f"🕒 **Your local time:** <t:{unix}:F> (<t:{unix}:R>)\n"
+        for flag, label, tz in DISPLAY_TIMEZONES:
+            local = kickoff.astimezone(ZoneInfo(tz))
+            fields.append({
+                "name": f"{flag} {label}",
+                "value": f"**{local.strftime('%H:%M')}** · {local.strftime('%a %d %b')}",
+                "inline": True,
+            })
+    except (ValueError, TypeError):
+        if start_time:
+            description += f"⏰ **Time:** {f'{match_date} {start_time}'.strip()}\n"
+
+    description += f"\n▶️ **[Click Here to Stream Live in HD]({match_url})**"
+
+    embed = {
+        "title": f"{meta['emoji']} {event_name}"[:256],
+        "url": match_url,
+        "description": description[:4096],
+        "color": DISCORD_COLORS.get(sport, 0xFACC15),
+        "fields": fields,
+        "footer": {"text": "SportzfyPlay • Free Live Sports"},
+    }
+    poster = match.get("poster")
+    if poster and str(poster).startswith("http"):
+        embed["image"] = {"url": poster}
+
+    return send_discord_webhook({
+        "username": "SportzfyPlay",
+        "embeds": [embed],
+        "allowed_mentions": {"parse": []},  # never ping @everyone/@here by accident
+    })
+
 def fetch_page_matches(url):
     matches = []
     try:
@@ -240,32 +325,45 @@ def main():
 
     new_posts = 0
     errors = 0
+    discord_enabled = DISCORD_WEBHOOK_URL.startswith("https://")
+    print(f"💬 Discord posting: {'ENABLED' if discord_enabled else 'disabled (DISCORD_WEBHOOK_URL not set)'}")
+
     for key, match in unique_matches.items():
         sport = (match.get("sport") or "").lower().strip()
-        
+
         # Only Football and Cricket
         if sport not in ALLOWED_SPORTS:
             continue
 
-        if key in posted:
-            continue
+        # History keys: plain slug = Telegram (kept for backward compatibility), "discord:<slug>" = Discord
+        if key not in posted:
+            print(f"🚀 [Telegram] Posting {sport.upper()} match: {match.get('eventName')} ({key})")
+            if post_match_to_telegram(match):
+                posted.add(key)
+                new_posts += 1
+                print(f"✅ [Telegram] Posted {key}")
+                time.sleep(2)  # anti-flood
+            else:
+                errors += 1
+                print(f"❌ [Telegram] Failed {key}")
 
-        print(f"🚀 Posting {sport.upper()} match: {match.get('eventName')} ({key})")
-        if post_match_to_telegram(match):
-            posted.add(key)
-            new_posts += 1
-            print(f"✅ Successfully posted {key}")
-            # Anti-flood delay: wait 2 seconds between posts
-            time.sleep(2)
-        else:
-            errors += 1
-            print(f"❌ Failed to post {key}")
+        discord_key = f"discord:{key}"
+        if discord_enabled and discord_key not in posted:
+            print(f"🚀 [Discord] Posting {sport.upper()} match: {match.get('eventName')} ({key})")
+            if post_match_to_discord(match):
+                posted.add(discord_key)
+                new_posts += 1
+                print(f"✅ [Discord] Posted {key}")
+                time.sleep(1)
+            else:
+                errors += 1
+                print(f"❌ [Discord] Failed {key}")
 
-    print(f"Finished. Posted {new_posts} new matches. Errors: {errors}")
+    print(f"Finished. Posted {new_posts} new messages. Errors: {errors}")
     save_posted(posted)
 
     if errors > 0 and new_posts == 0:
-        raise RuntimeError(f"Failed to post {errors} matches to Telegram. Check the error logs above for details.")
+        raise RuntimeError(f"Failed to post {errors} messages. Check the error logs above for details.")
 
 if __name__ == "__main__":
     main()
