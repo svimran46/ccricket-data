@@ -36,5 +36,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           if [ -f posted_matches.json ]; then
             git add posted_matches.json
-            git diff --staged --quiet || (git commit -m "chore: update posted matches history [skip ci]" && git push)
+            if ! git diff --staged --quiet; then
+              git pull --rebase origin main
+              git commit -m "chore: update posted matches history [skip ci]"
+              git push origin main
+            fi
           fi
