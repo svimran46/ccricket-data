@@ -109,7 +109,12 @@ def post_match_to_telegram(match):
     if not event_name:
         event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
 
-    slug = match.get("slug") or match.get("id")
+    slug = str(match.get("slug") or match.get("id") or "").strip()
+    if slug.startswith("/matches/"):
+        slug = slug[9:]
+    elif slug.startswith("matches/"):
+        slug = slug[8:]
+    slug = slug.strip("/")
     match_url = f"https://sportzfyplay.com/matches/{slug}"
     
     start_time = match.get("startTime", "Soon")
