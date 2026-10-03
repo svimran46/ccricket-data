@@ -31,5 +31,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add posted_matches.json
-          git diff --staged --quiet || (git commit -m "chore: update posted matches history [skip ci]" && git push)
+          if [ -f posted_matches.json ]; then
+            git add posted_matches.json
+            git diff --staged --quiet || (git commit -m "chore: update posted matches history [skip ci]" && git push)
+          fi

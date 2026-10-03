@@ -132,11 +132,9 @@ def fetch_page_matches(url):
 
 def main():
     if not BOT_TOKEN:
-        print("ERROR: TELEGRAM_BOT_TOKEN environment variable not set.")
-        return
+        raise SystemExit("ERROR: TELEGRAM_BOT_TOKEN secret is not set in GitHub repository secrets!")
     if not CHANNEL_ID:
-        print("ERROR: TELEGRAM_CHANNEL_ID environment variable not set.")
-        return
+        raise SystemExit("ERROR: TELEGRAM_CHANNEL_ID secret is not set in GitHub repository secrets!")
 
     posted = load_posted()
     print(f"Currently remembered matches: {len(posted)}")
