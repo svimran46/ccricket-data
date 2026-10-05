@@ -16,13 +16,13 @@ HISTORY_FILE = "posted_matches.json"
 # Europe/London handles GMT/BST daylight saving automatically.
 SOURCE_TZ = ZoneInfo(os.getenv("SOURCE_TIMEZONE", "Europe/London"))
 
-# Capital-city timezones shown in each post (flag, label, IANA zone)
+# Capital-city timezones shown in each post (flag, capital, IANA zone)
 DISPLAY_TIMEZONES = [
-    ("🇧🇩", "Bangladesh (Dhaka)", "Asia/Dhaka"),
-    ("🇮🇳", "India (New Delhi)", "Asia/Kolkata"),
-    ("🇺🇸", "USA (Washington DC)", "America/New_York"),
-    ("🇮🇩", "Indonesia (Jakarta)", "Asia/Jakarta"),
-    ("🇳🇬", "Nigeria (Abuja)", "Africa/Lagos"),
+    ("🇧🇩", "Dhaka", "Asia/Dhaka"),
+    ("🇮🇳", "New Delhi", "Asia/Kolkata"),
+    ("🇺🇸", "Washington DC", "America/New_York"),
+    ("🇮🇩", "Jakarta", "Asia/Jakarta"),
+    ("🇳🇬", "Abuja", "Africa/Lagos"),
     ("🇸🇬", "Singapore", "Asia/Singapore"),
 ]
 
@@ -131,6 +131,13 @@ def send_telegram_request(endpoint, payload):
         print(f"❌ Request Exception on {endpoint}: {e}")
         return False
 
+def format_local_time(dt):
+    """Format datetime as e.g. '5 Oct 10:50 PM' (no day name)."""
+    hour = dt.strftime('%I').lstrip('0')
+    minute = dt.strftime('%M')
+    ampm = dt.strftime('%p')
+    return f"{dt.day} {dt.strftime('%b')} {hour}:{minute} {ampm}"
+
 def build_time_block(match_date, start_time):
     """Return HTML lines with kick-off time in each capital. Falls back to raw text if parsing fails."""
     try:
@@ -143,8 +150,7 @@ def build_time_block(match_date, start_time):
     lines = ["\n🕒 <b>Kick-off Time:</b>"]
     for flag, label, tz in DISPLAY_TIMEZONES:
         local = kickoff.astimezone(ZoneInfo(tz))
-        # e.g. "00:45 · Sun 04 Oct" (date shown so day changes are clear)
-        lines.append(f"{flag} {label}: <b>{local.strftime('%H:%M')}</b> · {local.strftime('%a %d %b')}")
+        lines.append(f"{flag} {label}: <b>{format_local_time(local)}</b>")
     return "\n".join(lines) + "\n"
 
 def post_match_to_telegram(match):
@@ -254,7 +260,7 @@ def post_match_to_discord(match):
             local = kickoff.astimezone(ZoneInfo(tz))
             fields.append({
                 "name": f"{flag} {label}",
-                "value": f"**{local.strftime('%H:%M')}** · {local.strftime('%a %d %b')}",
+                "value": f"**{format_local_time(local)}**",
                 "inline": True,
             })
     except (ValueError, TypeError):
