@@ -340,6 +340,13 @@ def main():
     discord_enabled = DISCORD_WEBHOOK_URL.startswith("https://")
     print(f"💬 Discord posting: {'ENABLED' if discord_enabled else 'disabled (DISCORD_WEBHOOK_URL not set)'}")
 
+    FORCE_REPOST = os.getenv("FORCE_REPOST", "false").lower() in ("true", "1", "yes")
+    TARGET_MATCH = os.getenv("TARGET_MATCH", "").strip()
+    if FORCE_REPOST:
+        print("⚠️ FORCE_REPOST is active: skipping anti-duplicate check for current matches!")
+    if TARGET_MATCH:
+        print(f"🎯 TARGET_MATCH filter is active: only targeting '{TARGET_MATCH}'")
+
     for key, match in unique_matches.items():
         sport = (match.get("sport") or "").lower().strip()
 
@@ -347,8 +354,15 @@ def main():
         if sport not in ALLOWED_SPORTS:
             continue
 
+        # If user specified a specific match slug/video ID/URL, only process that one
+        if TARGET_MATCH:
+            slug = str(match.get("slug") or match.get("id") or "").strip()
+            watch_url = get_watch_url(match)
+            if TARGET_MATCH not in (key, slug, watch_url) and TARGET_MATCH not in slug:
+                continue
+
         # History keys: plain slug = Telegram (kept for backward compatibility), "discord:<slug>" = Discord
-        if key not in posted:
+        if FORCE_REPOST or key not in posted:
             print(f"🚀 [Telegram] Posting {sport.upper()} match: {match.get('eventName')} ({key})")
             if post_match_to_telegram(match):
                 posted.add(key)
@@ -360,7 +374,7 @@ def main():
                 print(f"❌ [Telegram] Failed {key}")
 
         discord_key = f"discord:{key}"
-        if discord_enabled and discord_key not in posted:
+        if discord_enabled and (FORCE_REPOST or discord_key not in posted):
             print(f"🚀 [Discord] Posting {sport.upper()} match: {match.get('eventName')} ({key})")
             if post_match_to_discord(match):
                 posted.add(discord_key)
