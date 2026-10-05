@@ -4,7 +4,18 @@ on:
   schedule:
     # Runs automatically every 15 minutes
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      force_repost:
+        description: 'Force re-post all current matches (ignore history)'
+        required: false
+        type: boolean
+        default: false
+      match_slug:
+        description: 'Target match slug, video ID or link (leave blank for all)'
+        required: false
+        type: string
+        default: ''
 
 jobs:
   post-matches:
@@ -31,6 +42,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          FORCE_REPOST: ${{ inputs.force_repost }}
+          TARGET_MATCH: ${{ inputs.match_slug }}
         run: python telegram_poster.py
 
       - name: Commit and Push Updated History
