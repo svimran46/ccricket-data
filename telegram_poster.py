@@ -32,19 +32,34 @@ SPORT_META = {
     "football": {
         "emoji": "⚽",
         "title": "Football Live",
+        "category_url": "https://sportzfyplay.com/sports/football",
         "tags": "#Football #LiveStream #SportzfyPlay"
     },
     "soccer": {
         "emoji": "⚽",
         "title": "Football Live",
+        "category_url": "https://sportzfyplay.com/sports/football",
         "tags": "#Football #LiveStream #SportzfyPlay"
     },
     "cricket": {
         "emoji": "🏏",
         "title": "Cricket Live",
+        "category_url": "https://sportzfyplay.com/sports/cricket",
         "tags": "#Cricket #LiveStream #SportzfyPlay"
     }
 }
+
+def get_watch_url(match):
+    """Build the /watch?v=... player link for the match."""
+    slug = str(match.get("slug") or match.get("id") or "").strip()
+    if "watch?v=" in slug:
+        video_id = slug.split("watch?v=")[-1]
+        return f"https://sportzfyplay.com/watch?v={video_id}"
+    for prefix in ("/matches/", "matches/", "/watch/", "watch/"):
+        if slug.startswith(prefix):
+            slug = slug[len(prefix):]
+    slug = slug.strip("/")
+    return f"https://sportzfyplay.com/watch?v={slug}"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -142,13 +157,8 @@ def post_match_to_telegram(match):
     if not event_name:
         event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
 
-    slug = str(match.get("slug") or match.get("id") or "").strip()
-    if slug.startswith("/matches/"):
-        slug = slug[9:]
-    elif slug.startswith("matches/"):
-        slug = slug[8:]
-    slug = slug.strip("/")
-    match_url = f"https://sportzfyplay.com/matches/{slug}"
+    watch_url = get_watch_url(match)
+    category_url = meta.get("category_url", "https://sportzfyplay.com/sports")
     
     start_time = match.get("startTime") or ""
     match_date = match.get("matchDate") or ""
@@ -159,13 +169,13 @@ def post_match_to_telegram(match):
 
     caption = (
         f"{meta['emoji']} <b>{safe_name}</b>\n\n"
-        f"🏆 <b>Category:</b> {safe_title}\n"
+        f"🏆 <b>Category:</b> <a href=\"{category_url}\">{safe_title}</a>\n"
     )
     caption += build_time_block(match_date, start_time)
         
     caption += (
         f"\n▶️ <b>Watch Free in HD:</b>\n"
-        f"🔗 <a href=\"{match_url}\">Click Here to Stream Live</a>\n\n"
+        f"🔗 <a href=\"{watch_url}\">Click Here to Stream Live</a>\n\n"
         f"{meta['tags']}"
     )
 
@@ -227,17 +237,13 @@ def post_match_to_discord(match):
     if not event_name:
         event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
 
-    slug = str(match.get("slug") or match.get("id") or "").strip()
-    for prefix in ("/matches/", "matches/"):
-        if slug.startswith(prefix):
-            slug = slug[len(prefix):]
-    slug = slug.strip("/")
-    match_url = f"https://sportzfyplay.com/matches/{slug}"
+    watch_url = get_watch_url(match)
+    category_url = meta.get("category_url", "https://sportzfyplay.com/sports")
 
     match_date = match.get("matchDate") or ""
     start_time = match.get("startTime") or ""
 
-    description = f"🏆 **Category:** {meta['title']}\n"
+    description = f"🏆 **Category:** [{meta['title']}]({category_url})\n"
     fields = []
     try:
         kickoff = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=SOURCE_TZ)
@@ -255,11 +261,11 @@ def post_match_to_discord(match):
         if start_time:
             description += f"⏰ **Time:** {f'{match_date} {start_time}'.strip()}\n"
 
-    description += f"\n▶️ **[Click Here to Stream Live in HD]({match_url})**"
+    description += f"\n▶️ **[Click Here to Stream Live in HD]({watch_url})**"
 
     embed = {
         "title": f"{meta['emoji']} {event_name}"[:256],
-        "url": match_url,
+        "url": watch_url,
         "description": description[:4096],
         "color": DISCORD_COLORS.get(sport, 0xFACC15),
         "fields": fields,
