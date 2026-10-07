@@ -132,62 +132,105 @@ def send_telegram_request(endpoint, payload):
         return False
 
 def format_local_time(dt):
-    """Format datetime as e.g. '5 Oct 10:50 PM' (no day name)."""
+    """Format datetime as e.g. '12:45 AM'."""
     hour = dt.strftime('%I').lstrip('0')
     minute = dt.strftime('%M')
     ampm = dt.strftime('%p')
-    return f"{dt.day} {dt.strftime('%b')} {hour}:{minute} {ampm}"
+    return f"{hour}:{minute} {ampm}"
 
 def build_time_block(match_date, start_time):
-    """Return HTML lines with kick-off time in each capital. Falls back to raw text if parsing fails."""
+    """Return aligned lines with kick-off time in each capital."""
     try:
         kickoff = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=SOURCE_TZ)
     except (ValueError, TypeError):
         if start_time:
-            return f"⏰ <b>Time:</b> {html.escape(f'{match_date} {start_time}'.strip())}\n"
+            return f"Time: {html.escape(f'{match_date} {start_time}'.strip())}\n\n"
         return ""
 
-    lines = ["\n🕒 <b>Kick-off Time:</b>"]
+    lines = []
     for flag, label, tz in DISPLAY_TIMEZONES:
         local = kickoff.astimezone(ZoneInfo(tz))
-        lines.append(f"{flag} {label}: <b>{format_local_time(local)}</b>")
-    return "\n".join(lines) + "\n"
+        time_str = format_local_time(local)
+        lines.append(f"{flag}  {label:<17} {time_str:>8}")
+    return "\n".join(lines) + "\n\n"
 
 def post_match_to_telegram(match):
     sport = (match.get("sport") or "").lower().strip()
-    meta = SPORT_META.get(sport, {"emoji": "🏆", "title": "Sports Live", "tags": "#Sports #SportzfyPlay"})
-    
-    event_name = match.get("eventName")
-    home = match.get("homeTeam") or ""
-    away = match.get("awayTeam") or ""
-    if not event_name:
-        event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
+    meta = SPORT_META.get(sport, {"emoji": "⚽", "title": "Football Live", "tags": "#Football #LiveStream #SportzfyPlay"})
+
+    home = (match.get("homeTeam") or "").strip()
+    away = (match.get("awayTeam") or "").strip()
+    event_name = (match.get("eventName") or "").strip()
+
+    if not home and not away and event_name:
+        if " vs " in event_name.lower():
+            parts = re.split(r'\s+vs\s+', event_name, flags=re.IGNORECASE, maxsplit=1)
+            home, away = parts[0].strip(), parts[1].strip()
+        elif " - " in event_name:
+            parts = event_name.split(" - ", 1)
+            home, away = parts[0].strip(), parts[1].strip()
+        else:
+            home = event_name
+            away = ""
+
+    comp = (match.get("competition") or "").strip()
+    if not comp:
+        comp = meta.get("title", "SPORTS LIVE").upper()
+    else:
+        comp = comp.upper()
+
+    match_date = (match.get("matchDate") or "").strip()
+    start_time = (match.get("startTime") or "").strip()
+
+    matchday_date_str = ""
+    kickoff_date_str = ""
+
+    try:
+        kickoff_dt = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M")
+        matchday_date_str = kickoff_dt.strftime("%d %B").upper()
+        kickoff_date_str = kickoff_dt.strftime("%d %B %Y").upper()
+    except (ValueError, TypeError):
+        if match_date:
+            try:
+                dt_only = datetime.strptime(match_date, "%Y-%m-%d")
+                matchday_date_str = dt_only.strftime("%d %B").upper()
+                kickoff_date_str = dt_only.strftime("%d %B %Y").upper()
+            except Exception:
+                matchday_date_str = match_date.upper()
+                kickoff_date_str = match_date.upper()
+
+    header_date = f" · {matchday_date_str}" if matchday_date_str else ""
+    sport_label = "CRICKET" if sport == "cricket" else "FOOTBALL"
 
     watch_url = get_watch_url(match)
-    category_url = meta.get("category_url", "https://sportzfyplay.com/sports")
-    
-    start_time = match.get("startTime") or ""
-    match_date = match.get("matchDate") or ""
 
-    # HTML-escape dynamic strings to prevent HTML parse crashes in Telegram
-    safe_name = html.escape(str(event_name))
-    safe_title = html.escape(str(meta['title']))
+    safe_home = html.escape(home.upper())
+    safe_away = html.escape(away.upper())
+    safe_comp = html.escape(comp)
 
     caption = (
-        f"{meta['emoji']} <b>{safe_name}</b>\n\n"
-        f"🏆 <b>Category:</b> <a href=\"{category_url}\">{safe_title}</a>\n"
+        f"SPORTZFYPLAY\n"
+        f"MATCHDAY{header_date}\n\n"
+        f"{meta['emoji']} {safe_home}\n"
+        f"       VS\n"
+        f"   {safe_away}\n\n"
+        f"{safe_comp}\n"
+        f"{sport_label} · LIVE\n\n"
+        f"KICK-OFF\n"
+        f"{kickoff_date_str}\n\n"
     )
+
     caption += build_time_block(match_date, start_time)
-        
+
     caption += (
-        f"\n▶️ <b>Watch Free in HD:</b>\n"
-        f"🔗 <a href=\"{watch_url}\">Click Here to Stream Live</a>\n\n"
+        f"▶ <a href=\"{watch_url}\">WATCH LIVE\n"
+        f"  Stream in HD →</a>\n\n"
         f"{meta['tags']}"
     )
 
     poster = match.get("poster")
     if poster and str(poster).startswith("http"):
-        print(f"Attempting sendPhoto for: {event_name}")
+        print(f"Attempting sendPhoto for: {event_name or f'{home} vs {away}'}")
         success = send_telegram_request("sendPhoto", {
             "chat_id": get_clean_channel(),
             "photo": poster,
@@ -196,7 +239,7 @@ def post_match_to_telegram(match):
         })
         if success:
             return True
-        print(f"Photo failed, falling back to sendMessage for: {event_name}")
+        print(f"Photo failed, falling back to sendMessage for: {event_name or f'{home} vs {away}'}")
 
     # Fallback to sendMessage (text only)
     return send_telegram_request("sendMessage", {
