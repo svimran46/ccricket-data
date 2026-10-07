@@ -251,7 +251,7 @@ def post_match_to_telegram(match):
 
 # ---------------------------------------------------------------- DISCORD ---
 
-DISCORD_WEBHOOK_URL = (os.getenv("DISCORD_WEBHOOK_URL") or "").strip().strip('"').strip("'")
+DISCORD_WEBHOOK_URL = (os.getenv("DISCORD_WEBHOOK_URL") or "https://discord.com/api/webhooks/1557448819145449570/I7flIR4XhFxVaMoAsorYwXpfCAsTbgya18TbblePh1xXnNXS6SayI-3SQvpcX4sGuhfI").strip().strip('"').strip("'")
 DISCORD_COLORS = {"football": 0x1ED760, "soccer": 0x1ED760, "cricket": 0x3B82F6}
 
 def send_discord_webhook(payload, retries=3):
