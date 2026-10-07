@@ -431,6 +431,14 @@ def main():
     print(f"Finished. Posted {new_posts} new messages. Errors: {errors}")
     save_posted(posted)
 
+    # Automatically keep #site-status up to date in Discord
+    try:
+        from site_status_checker import update_status
+        print("🌐 Updating Discord #site-status card...")
+        update_status()
+    except Exception as e:
+        print(f"Note: Site status update skipped: {e}")
+
     if errors > 0 and new_posts == 0:
         raise RuntimeError(f"Failed to post {errors} messages. Check the error logs above for details.")
 
