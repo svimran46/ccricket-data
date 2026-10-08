@@ -139,20 +139,19 @@ def format_local_time(dt):
     return f"{hour}:{minute} {ampm}"
 
 def build_time_block(match_date, start_time):
-    """Return aligned lines with kick-off time in each capital."""
+    """Return compact inline flags & times for all 6 capital cities."""
     try:
         kickoff = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=SOURCE_TZ)
     except (ValueError, TypeError):
         if start_time:
-            return f"Time: {html.escape(f'{match_date} {start_time}'.strip())}\n\n"
+            return f"{html.escape(f'{match_date} {start_time}'.strip())}"
         return ""
 
-    lines = []
+    items = []
     for flag, label, tz in DISPLAY_TIMEZONES:
         local = kickoff.astimezone(ZoneInfo(tz))
-        time_str = format_local_time(local)
-        lines.append(f"{flag}  {label:<17} {time_str:>8}")
-    return "\n".join(lines) + "\n\n"
+        items.append(f"{flag} {format_local_time(local)}")
+    return " · ".join(items)
 
 def post_match_to_telegram(match):
     sport = (match.get("sport") or "").lower().strip()
@@ -162,69 +161,39 @@ def post_match_to_telegram(match):
     away = (match.get("awayTeam") or "").strip()
     event_name = (match.get("eventName") or "").strip()
 
-    if not home and not away and event_name:
-        if " vs " in event_name.lower():
-            parts = re.split(r'\s+vs\s+', event_name, flags=re.IGNORECASE, maxsplit=1)
-            home, away = parts[0].strip(), parts[1].strip()
-        elif " - " in event_name:
-            parts = event_name.split(" - ", 1)
-            home, away = parts[0].strip(), parts[1].strip()
-        else:
-            home = event_name
-            away = ""
+    if not event_name:
+        event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
 
     comp = (match.get("competition") or "").strip()
-    if not comp:
-        comp = meta.get("title", "SPORTS LIVE").upper()
-    else:
-        comp = comp.upper()
-
     match_date = (match.get("matchDate") or "").strip()
     start_time = (match.get("startTime") or "").strip()
 
-    matchday_date_str = ""
-    kickoff_date_str = ""
-
+    # Friendly date, e.g. "06 Oct"
+    date_label = ""
     try:
-        kickoff_dt = datetime.strptime(f"{match_date} {start_time}", "%Y-%m-%d %H:%M")
-        matchday_date_str = kickoff_dt.strftime("%d %B").upper()
-        kickoff_date_str = kickoff_dt.strftime("%d %B %Y").upper()
-    except (ValueError, TypeError):
-        if match_date:
-            try:
-                dt_only = datetime.strptime(match_date, "%Y-%m-%d")
-                matchday_date_str = dt_only.strftime("%d %B").upper()
-                kickoff_date_str = dt_only.strftime("%d %B %Y").upper()
-            except Exception:
-                matchday_date_str = match_date.upper()
-                kickoff_date_str = match_date.upper()
+        dt = datetime.strptime(match_date, "%Y-%m-%d")
+        date_label = f"{dt.strftime('%d %b')}"
+    except Exception:
+        date_label = match_date
 
-    header_date = f" · {matchday_date_str}" if matchday_date_str else ""
-    sport_label = "CRICKET" if sport == "cricket" else "FOOTBALL"
-
+    time_strip = build_time_block(match_date, start_time)
     watch_url = get_watch_url(match)
 
-    safe_home = html.escape(home.upper())
-    safe_away = html.escape(away.upper())
-    safe_comp = html.escape(comp)
+    safe_name = html.escape(str(event_name))
+    safe_comp = html.escape(str(comp)) if comp else ""
 
-    caption = (
-        f"SPORTZFYPLAY\n"
-        f"MATCHDAY{header_date}\n\n"
-        f"{meta['emoji']} {safe_home}\n"
-        f"       VS\n"
-        f"   {safe_away}\n\n"
-        f"{safe_comp}\n"
-        f"{sport_label} · LIVE\n\n"
-        f"KICK-OFF\n"
-        f"{kickoff_date_str}\n\n"
-    )
+    caption = f"{meta['emoji']} <b>{safe_name}</b>\n"
+    if safe_comp:
+        caption += f"🏆 <i>{safe_comp}</i>\n"
 
-    caption += build_time_block(match_date, start_time)
+    caption += "\n"
+    if date_label and time_strip:
+        caption += f"📅 <b>{date_label}</b> · {time_strip}\n\n"
+    elif time_strip:
+        caption += f"🕒 {time_strip}\n\n"
 
     caption += (
-        f"▶ <a href=\"{watch_url}\">WATCH LIVE\n"
-        f"  Stream in HD →</a>\n\n"
+        f"🔗 <a href=\"{watch_url}\"><b>Click Here to Stream Live</b></a>\n\n"
         f"{meta['tags']}"
     )
 
