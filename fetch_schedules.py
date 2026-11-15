@@ -4,7 +4,8 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timezone
 
-API_KEY = os.getenv("RAPIDAPI_KEY", "REDACTED_RAPIDAPI_KEY")
+# Never hardcode this. Set RAPIDAPI_KEY in the environment / GitHub secrets.
+API_KEY = os.getenv("RAPIDAPI_KEY", "").strip()
 API_HOST = "cricbuzz-cricket.p.rapidapi.com"
 GITHUB_USER = "svimran46"
 GITHUB_REPO = "ccricket-data"
@@ -169,6 +170,9 @@ def fetch_category_data(url):
         return None
 
 def main():
+    if not API_KEY:
+        raise SystemExit("ERROR: RAPIDAPI_KEY is not set. Add it as a repository secret / environment variable.")
+
     now_utc = datetime.now(timezone.utc).isoformat()
     all_matches = []
 

@@ -220,7 +220,8 @@ def post_match_to_telegram(match):
 
 # ---------------------------------------------------------------- DISCORD ---
 
-DISCORD_WEBHOOK_URL = (os.getenv("DISCORD_WEBHOOK_URL") or "REDACTED_DISCORD_WEBHOOK_URL").strip().strip('"').strip("'")
+# Never hardcode this. Set DISCORD_WEBHOOK_URL in the environment / GitHub secrets.
+DISCORD_WEBHOOK_URL = (os.getenv("DISCORD_WEBHOOK_URL") or "").strip().strip('"').strip("'")
 DISCORD_COLORS = {"football": 0x1ED760, "soccer": 0x1ED760, "cricket": 0x3B82F6}
 
 def send_discord_webhook(payload, retries=3):
