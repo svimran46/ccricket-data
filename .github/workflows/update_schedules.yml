@@ -21,8 +21,6 @@ jobs:
           python-version: '3.11'
 
       - name: Run Fetch Script
-        env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         run: python fetch_schedules.py
 
       - name: Commit and Push Updates

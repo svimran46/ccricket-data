@@ -2,19 +2,22 @@ import os
 import json
 import urllib.request
 import urllib.error
+import re
+import time
 from datetime import datetime, timezone
 
-# Never hardcode this. Set RAPIDAPI_KEY in the environment / GitHub secrets.
-API_KEY = os.getenv("RAPIDAPI_KEY", "").strip()
-API_HOST = "cricbuzz-cricket.p.rapidapi.com"
+# Schedules are read straight from the public Cricbuzz website (no RapidAPI / no key).
+# Each schedule page embeds the same "matchScheduleMap" JSON the RapidAPI used to return.
+USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 GITHUB_USER = "svimran46"
 GITHUB_REPO = "ccricket-data"
 REPO_RAW_URL = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/main/assets/logos"
 
 CATEGORIES = [
-    ("International", "https://cricbuzz-cricket.p.rapidapi.com/schedule/v1/international"),
-    ("T20 Leagues", "https://cricbuzz-cricket.p.rapidapi.com/schedule/v1/league"),
-    ("Domestic", "https://cricbuzz-cricket.p.rapidapi.com/schedule/v1/domestic")
+    ("International", "https://www.cricbuzz.com/cricket-schedule/upcoming-series/international"),
+    ("T20 Leagues", "https://www.cricbuzz.com/cricket-schedule/upcoming-series/league"),
+    ("Domestic", "https://www.cricbuzz.com/cricket-schedule/upcoming-series/domestic")
 ]
 
 # Map channel names to clean repository vector logo URLs
@@ -154,25 +157,48 @@ def resolve_broadcasters(series_name, match_desc="", venue_info={}):
         {"channel": "Willow TV", "region": "USA & North America", "type": "Digital", "logo": LOGO_MAP["Willow TV"]}
     ]
 
-def fetch_category_data(url):
-    req = urllib.request.Request(
-        url,
-        headers={
-            "X-RapidAPI-Host": API_HOST,
-            "X-RapidAPI-Key": API_KEY
-        }
-    )
-    try:
-        with urllib.request.urlopen(req) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        print(f"Error fetching {url}: {e}")
-        return None
+def _extract_schedule_data(html):
+    """Pull the embedded {"matchScheduleMap": [...]} object out of a Cricbuzz page."""
+    decoder = json.JSONDecoder()
+    # Next.js streams page data as JSON-encoded strings inside self.__next_f.push([1,"..."])
+    for chunk in re.findall(r'self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)', html):
+        if "matchScheduleMap" not in chunk:
+            continue
+        try:
+            text = json.loads(chunk)
+        except ValueError:
+            continue
+        idx = text.find('"scheduleData":')
+        if idx == -1:
+            continue
+        try:
+            obj, _ = decoder.raw_decode(text, idx + len('"scheduleData":'))
+        except ValueError:
+            continue
+        if isinstance(obj, dict) and "matchScheduleMap" in obj:
+            return obj
+    return None
+
+def fetch_category_data(url, retries=3):
+    req = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                html = resp.read().decode("utf-8", errors="replace")
+            data = _extract_schedule_data(html)
+            if data:
+                return data
+            print(f"No schedule data found in {url} (attempt {attempt})")
+        except Exception as e:
+            print(f"Error fetching {url} (attempt {attempt}): {e}")
+        time.sleep(3 * attempt)
+    return None
 
 def main():
-    if not API_KEY:
-        raise SystemExit("ERROR: RAPIDAPI_KEY is not set. Add it as a repository secret / environment variable.")
-
     now_utc = datetime.now(timezone.utc).isoformat()
     all_matches = []
 
@@ -246,6 +272,11 @@ def main():
                         "broadcasters": broadcasters
                     }
                     all_matches.append(match_obj)
+
+    if not all_matches:
+        # Keep the last good schedules.json instead of overwriting it with an empty list
+        print("ERROR: No matches fetched from Cricbuzz - leaving schedules.json unchanged.")
+        raise SystemExit(1)
 
     # Master output structure
     output_data = {
