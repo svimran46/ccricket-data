@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Cricket Match Schedules & Broadcasters",
-    "last_updated_utc": "2026-11-21T08:31:40.521164+00:00",
+    "last_updated_utc": "2026-11-21T13:45:23.620744+00:00",
     "total_matches": 94,
     "categories": [
       "International",
@@ -10,168 +10,6 @@
     ]
   },
   "matches": [
-    {
-      "match_id": 161285,
-      "category": "International",
-      "series": "India tour of New Zealand 2026",
-      "match_desc": "1st Test, Day 3",
-      "match_format": "TEST",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SAT, NOV 21 2026",
-        "time_utc": "2026-11-20 22:00 UTC",
-        "timestamp_millis": 1795212000000
-      },
-      "teams": {
-        "team1": {
-          "id": 13,
-          "name": "New Zealand",
-          "short_name": "NZ"
-        },
-        "team2": {
-          "id": 2,
-          "name": "India",
-          "short_name": "IND"
-        }
-      },
-      "venue": {
-        "ground": "Basin Reserve",
-        "city": "Wellington",
-        "country": "New Zealand"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 151338,
-      "category": "International",
-      "series": "England tour of Australia, 2026",
-      "match_desc": "1st T20I",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SAT, NOV 21 2026",
-        "time_utc": "2026-11-21 08:15 UTC",
-        "timestamp_millis": 1795248900000
-      },
-      "teams": {
-        "team1": {
-          "id": 4,
-          "name": "Australia",
-          "short_name": "AUS"
-        },
-        "team2": {
-          "id": 9,
-          "name": "England",
-          "short_name": "ENG"
-        }
-      },
-      "venue": {
-        "ground": "Melbourne Cricket Ground",
-        "city": "Melbourne",
-        "country": "Australia"
-      },
-      "broadcasters": [
-        {
-          "channel": "Seven Network",
-          "region": "Australia (Host)",
-          "type": "Free-to-Air",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
-        },
-        {
-          "channel": "Fox Cricket",
-          "region": "Australia (Host)",
-          "type": "TV & Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
-        },
-        {
-          "channel": "Star Sports",
-          "region": "India",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
-        },
-        {
-          "channel": "TNT Sports",
-          "region": "United Kingdom",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 161285,
-      "category": "International",
-      "series": "India tour of New Zealand 2026",
-      "match_desc": "1st Test, Day 4",
-      "match_format": "TEST",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SUN, NOV 22 2026",
-        "time_utc": "2026-11-21 22:00 UTC",
-        "timestamp_millis": 1795298400000
-      },
-      "teams": {
-        "team1": {
-          "id": 13,
-          "name": "New Zealand",
-          "short_name": "NZ"
-        },
-        "team2": {
-          "id": 2,
-          "name": "India",
-          "short_name": "IND"
-        }
-      },
-      "venue": {
-        "ground": "Basin Reserve",
-        "city": "Wellington",
-        "country": "New Zealand"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
     {
       "match_id": 161285,
       "category": "International",
@@ -804,6 +642,156 @@
           "channel": "Willow TV",
           "region": "USA",
           "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 161296,
+      "category": "International",
+      "series": "India tour of New Zealand 2026",
+      "match_desc": "2nd Test, Day 4",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, NOV 30 2026",
+        "time_utc": "2026-11-29 22:00 UTC",
+        "timestamp_millis": 1795989600000
+      },
+      "teams": {
+        "team1": {
+          "id": 13,
+          "name": "New Zealand",
+          "short_name": "NZ"
+        },
+        "team2": {
+          "id": 2,
+          "name": "India",
+          "short_name": "IND"
+        }
+      },
+      "venue": {
+        "ground": "Hagley Oval",
+        "city": "Christchurch",
+        "country": "New Zealand"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 161296,
+      "category": "International",
+      "series": "India tour of New Zealand 2026",
+      "match_desc": "2nd Test, Day 5",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, DEC 01 2026",
+        "time_utc": "2026-11-30 22:00 UTC",
+        "timestamp_millis": 1796076000000
+      },
+      "teams": {
+        "team1": {
+          "id": 13,
+          "name": "New Zealand",
+          "short_name": "NZ"
+        },
+        "team2": {
+          "id": 2,
+          "name": "India",
+          "short_name": "IND"
+        }
+      },
+      "venue": {
+        "ground": "Hagley Oval",
+        "city": "Christchurch",
+        "country": "New Zealand"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 147972,
+      "category": "International",
+      "series": "Bangladesh tour of South Africa, 2026",
+      "match_desc": "1st ODI",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "TUE, DEC 01 2026",
+        "time_utc": "2026-12-01 11:30 UTC",
+        "timestamp_millis": 1796124600000
+      },
+      "teams": {
+        "team1": {
+          "id": 11,
+          "name": "South Africa",
+          "short_name": "RSA"
+        },
+        "team2": {
+          "id": 6,
+          "name": "Bangladesh",
+          "short_name": "BAN"
+        }
+      },
+      "venue": {
+        "ground": "Buffalo Park",
+        "city": "East London",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
