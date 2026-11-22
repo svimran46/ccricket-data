@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Cricket Match Schedules & Broadcasters",
-    "last_updated_utc": "2026-11-21T22:29:17.443959+00:00",
-    "total_matches": 107,
+    "last_updated_utc": "2026-11-22T03:37:19.092426+00:00",
+    "total_matches": 106,
     "categories": [
       "International",
       "T20 Leagues",
@@ -3674,56 +3674,6 @@
         "ground": "Zayed Cricket Stadium",
         "city": "Abu Dhabi",
         "country": "United Arab Emirates"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 171320,
-      "category": "Domestic",
-      "series": "Plunket Shield 2026-27",
-      "match_desc": "2nd Match, Day 4",
-      "match_format": "TEST",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SUN, NOV 22 2026",
-        "time_utc": "2026-11-21 21:30 UTC",
-        "timestamp_millis": 1795296600000
-      },
-      "teams": {
-        "team1": {
-          "id": 313,
-          "name": "Central Districts",
-          "short_name": "CD"
-        },
-        "team2": {
-          "id": 314,
-          "name": "Wellington",
-          "short_name": "WEL"
-        }
-      },
-      "venue": {
-        "ground": "Fitzherbert Park",
-        "city": "Palmerston North",
-        "country": "New Zealand"
       },
       "broadcasters": [
         {
