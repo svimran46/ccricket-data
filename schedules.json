@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Cricket Match Schedules & Broadcasters",
-    "last_updated_utc": "2026-11-23T04:10:08.933858+00:00",
-    "total_matches": 84,
+    "last_updated_utc": "2026-11-23T16:34:31.613477+00:00",
+    "total_matches": 90,
     "categories": [
       "International",
       "T20 Leagues",
@@ -10,56 +10,6 @@
     ]
   },
   "matches": [
-    {
-      "match_id": 161285,
-      "category": "International",
-      "series": "India tour of New Zealand 2026",
-      "match_desc": "1st Test, Day 5",
-      "match_format": "TEST",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-22 22:00 UTC",
-        "timestamp_millis": 1795384800000
-      },
-      "teams": {
-        "team1": {
-          "id": 13,
-          "name": "New Zealand",
-          "short_name": "NZ"
-        },
-        "team2": {
-          "id": 2,
-          "name": "India",
-          "short_name": "IND"
-        }
-      },
-      "venue": {
-        "ground": "Basin Reserve",
-        "city": "Wellington",
-        "country": "New Zealand"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
     {
       "match_id": 147964,
       "category": "International",
@@ -1897,56 +1847,6 @@
       ]
     },
     {
-      "match_id": 165191,
-      "category": "T20 Leagues",
-      "series": "Syed Mushtaq Ali Trophy Elite 2026",
-      "match_desc": "Elite Group A",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "THU, NOV 26 2026",
-        "time_utc": "2026-11-26 03:30 UTC",
-        "timestamp_millis": 1795663800000
-      },
-      "teams": {
-        "team1": {
-          "id": 128,
-          "name": "Karnataka",
-          "short_name": "KAR"
-        },
-        "team2": {
-          "id": 170,
-          "name": "Baroda",
-          "short_name": "BRD"
-        }
-      },
-      "venue": {
-        "ground": "Sharad Pawar Cricket Academy BKC",
-        "city": "Mumbai",
-        "country": "India"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
       "match_id": 165201,
       "category": "T20 Leagues",
       "series": "Syed Mushtaq Ali Trophy Elite 2026",
@@ -1997,32 +1897,32 @@
       ]
     },
     {
-      "match_id": 165261,
+      "match_id": 165191,
       "category": "T20 Leagues",
       "series": "Syed Mushtaq Ali Trophy Elite 2026",
-      "match_desc": "Elite Group D",
+      "match_desc": "Elite Group A",
       "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
         "date": "THU, NOV 26 2026",
-        "time_utc": "2026-11-26 05:30 UTC",
-        "timestamp_millis": 1795671000000
+        "time_utc": "2026-11-26 03:30 UTC",
+        "timestamp_millis": 1795663800000
       },
       "teams": {
         "team1": {
-          "id": 375,
-          "name": "Chhattisgarh",
-          "short_name": "CG"
+          "id": 128,
+          "name": "Karnataka",
+          "short_name": "KAR"
         },
         "team2": {
-          "id": 248,
-          "name": "Vidarbha",
-          "short_name": "VID"
+          "id": 170,
+          "name": "Baroda",
+          "short_name": "BRD"
         }
       },
       "venue": {
-        "ground": "Eden Gardens",
-        "city": "Kolkata",
+        "ground": "Sharad Pawar Cricket Academy BKC",
+        "city": "Mumbai",
         "country": "India"
       },
       "broadcasters": [
@@ -2047,10 +1947,10 @@
       ]
     },
     {
-      "match_id": 165251,
+      "match_id": 165231,
       "category": "T20 Leagues",
       "series": "Syed Mushtaq Ali Trophy Elite 2026",
-      "match_desc": "Elite Group C",
+      "match_desc": "Elite Group A",
       "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
@@ -2060,19 +1960,19 @@
       },
       "teams": {
         "team1": {
-          "id": 244,
-          "name": "Kerala",
-          "short_name": "KER"
+          "id": 232,
+          "name": "Bengal",
+          "short_name": "BEN"
         },
         "team2": {
-          "id": 251,
-          "name": "Himachal Pradesh",
-          "short_name": "HP"
+          "id": 171,
+          "name": "Rajasthan",
+          "short_name": "RAJ"
         }
       },
       "venue": {
-        "ground": "PCA International Cricket Stadium, Ground A",
-        "city": "New Chandigarh",
+        "ground": "Wankhede Stadium",
+        "city": "Mumbai",
         "country": "India"
       },
       "broadcasters": [
@@ -2147,10 +2047,10 @@
       ]
     },
     {
-      "match_id": 165231,
+      "match_id": 165251,
       "category": "T20 Leagues",
       "series": "Syed Mushtaq Ali Trophy Elite 2026",
-      "match_desc": "Elite Group A",
+      "match_desc": "Elite Group C",
       "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
@@ -2160,19 +2060,69 @@
       },
       "teams": {
         "team1": {
-          "id": 232,
-          "name": "Bengal",
-          "short_name": "BEN"
+          "id": 244,
+          "name": "Kerala",
+          "short_name": "KER"
         },
         "team2": {
-          "id": 171,
-          "name": "Rajasthan",
-          "short_name": "RAJ"
+          "id": 251,
+          "name": "Himachal Pradesh",
+          "short_name": "HP"
         }
       },
       "venue": {
-        "ground": "Wankhede Stadium",
-        "city": "Mumbai",
+        "ground": "PCA International Cricket Stadium, Ground A",
+        "city": "New Chandigarh",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 165261,
+      "category": "T20 Leagues",
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "match_desc": "Elite Group D",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, NOV 26 2026",
+        "time_utc": "2026-11-26 05:30 UTC",
+        "timestamp_millis": 1795671000000
+      },
+      "teams": {
+        "team1": {
+          "id": 375,
+          "name": "Chhattisgarh",
+          "short_name": "CG"
+        },
+        "team2": {
+          "id": 248,
+          "name": "Vidarbha",
+          "short_name": "VID"
+        }
+      },
+      "venue": {
+        "ground": "Eden Gardens",
+        "city": "Kolkata",
         "country": "India"
       },
       "broadcasters": [
@@ -2297,56 +2247,6 @@
       ]
     },
     {
-      "match_id": 165271,
-      "category": "T20 Leagues",
-      "series": "Syed Mushtaq Ali Trophy Elite 2026",
-      "match_desc": "Elite Group A",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "THU, NOV 26 2026",
-        "time_utc": "2026-11-26 08:00 UTC",
-        "timestamp_millis": 1795680000000
-      },
-      "teams": {
-        "team1": {
-          "id": 595,
-          "name": "Chandigarh",
-          "short_name": "CDG"
-        },
-        "team2": {
-          "id": 243,
-          "name": "Jharkhand",
-          "short_name": "JHKD"
-        }
-      },
-      "venue": {
-        "ground": "Sharad Pawar Cricket Academy BKC",
-        "city": "Mumbai",
-        "country": "India"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
       "match_id": 165281,
       "category": "T20 Leagues",
       "series": "Syed Mushtaq Ali Trophy Elite 2026",
@@ -2373,6 +2273,56 @@
       "venue": {
         "ground": "Daly College Ground",
         "city": "Indore",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 165271,
+      "category": "T20 Leagues",
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "match_desc": "Elite Group A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, NOV 26 2026",
+        "time_utc": "2026-11-26 08:00 UTC",
+        "timestamp_millis": 1795680000000
+      },
+      "teams": {
+        "team1": {
+          "id": 595,
+          "name": "Chandigarh",
+          "short_name": "CDG"
+        },
+        "team2": {
+          "id": 243,
+          "name": "Jharkhand",
+          "short_name": "JHKD"
+        }
+      },
+      "venue": {
+        "ground": "Sharad Pawar Cricket Academy BKC",
+        "city": "Mumbai",
         "country": "India"
       },
       "broadcasters": [
@@ -2816,106 +2766,6 @@
           "channel": "Willow TV",
           "region": "USA",
           "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 177181,
-      "category": "Domestic",
-      "series": "ACC Men's Asia Cup Rising Stars 2026",
-      "match_desc": "9th Match, Group A",
-      "match_format": "ODI",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-23 06:00 UTC",
-        "timestamp_millis": 1795413600000
-      },
-      "teams": {
-        "team1": {
-          "id": 341,
-          "name": "Afghanistan A",
-          "short_name": "AFGA"
-        },
-        "team2": {
-          "id": 8,
-          "name": "Hong Kong, China",
-          "short_name": "HKC"
-        }
-      },
-      "venue": {
-        "ground": "University of Doha for Science and Technology",
-        "city": "Doha",
-        "country": "Qatar"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 177192,
-      "category": "Domestic",
-      "series": "ACC Men's Asia Cup Rising Stars 2026",
-      "match_desc": "10th Match, Group A",
-      "match_format": "ODI",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-23 10:00 UTC",
-        "timestamp_millis": 1795428000000
-      },
-      "teams": {
-        "team1": {
-          "id": 43,
-          "name": "Sri Lanka A",
-          "short_name": "SLA"
-        },
-        "team2": {
-          "id": 288,
-          "name": "Bangladesh A",
-          "short_name": "BANA"
-        }
-      },
-      "venue": {
-        "ground": "West End Park International Cricket Stadium",
-        "city": "Doha",
-        "country": "Qatar"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
@@ -3443,6 +3293,56 @@
       ]
     },
     {
+      "match_id": 178500,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "1st Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "WED, NOV 25 2026",
+        "time_utc": "2026-11-25 14:00 UTC",
+        "timestamp_millis": 1795615200000
+      },
+      "teams": {
+        "team1": {
+          "id": 3703,
+          "name": "Bihar Rising",
+          "short_name": "BHR"
+        },
+        "team2": {
+          "id": 3693,
+          "name": "Andhra Warriors",
+          "short_name": "ANDW"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
       "match_id": 166697,
       "category": "Domestic",
       "series": "Sheffield Shield 2026-27",
@@ -3567,10 +3467,10 @@
       ]
     },
     {
-      "match_id": 171807,
+      "match_id": 171827,
       "category": "Domestic",
       "series": "CSA Four-Day Series Division One 2026-27",
-      "match_desc": "13th Match, Day 1",
+      "match_desc": "15th Match, Day 1",
       "match_format": "TEST",
       "status": "Scheduled",
       "schedule": {
@@ -3580,19 +3480,19 @@
       },
       "teams": {
         "team1": {
-          "id": 1759,
-          "name": "Boland",
-          "short_name": "BOL"
+          "id": 155,
+          "name": "Warriors",
+          "short_name": "WAR"
         },
         "team2": {
-          "id": 281,
-          "name": "Knights",
-          "short_name": "KNG"
+          "id": 90,
+          "name": "Dolphins",
+          "short_name": "DOL"
         }
       },
       "venue": {
-        "ground": "Boland Park",
-        "city": "Paarl",
+        "ground": "St George's Park",
+        "city": "Gqeberha",
         "country": "South Africa"
       },
       "broadcasters": [
@@ -3691,10 +3591,10 @@
       ]
     },
     {
-      "match_id": 171827,
+      "match_id": 171807,
       "category": "Domestic",
       "series": "CSA Four-Day Series Division One 2026-27",
-      "match_desc": "15th Match, Day 1",
+      "match_desc": "13th Match, Day 1",
       "match_format": "TEST",
       "status": "Scheduled",
       "schedule": {
@@ -3704,19 +3604,19 @@
       },
       "teams": {
         "team1": {
-          "id": 155,
-          "name": "Warriors",
-          "short_name": "WAR"
+          "id": 1759,
+          "name": "Boland",
+          "short_name": "BOL"
         },
         "team2": {
-          "id": 90,
-          "name": "Dolphins",
-          "short_name": "DOL"
+          "id": 281,
+          "name": "Knights",
+          "short_name": "KNG"
         }
       },
       "venue": {
-        "ground": "St George's Park",
-        "city": "Gqeberha",
+        "ground": "Boland Park",
+        "city": "Paarl",
         "country": "South Africa"
       },
       "broadcasters": [
@@ -3877,33 +3777,33 @@
       ]
     },
     {
-      "match_id": 177210,
+      "match_id": 178503,
       "category": "Domestic",
-      "series": "ACC Men's Asia Cup Rising Stars 2026",
-      "match_desc": "1st Semi-Final (A1 v B2)",
-      "match_format": "ODI",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "2nd Match, Group B",
+      "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
         "date": "THU, NOV 26 2026",
-        "time_utc": "2026-11-26 10:00 UTC",
-        "timestamp_millis": 1795687200000
+        "time_utc": "2026-11-26 09:30 UTC",
+        "timestamp_millis": 1795685400000
       },
       "teams": {
         "team1": {
-          "id": 106,
-          "name": "TBC",
-          "short_name": "TBC"
+          "id": 3713,
+          "name": "Twin Hills United",
+          "short_name": "THU"
         },
         "team2": {
-          "id": 106,
-          "name": "TBC",
-          "short_name": "TBC"
+          "id": 3723,
+          "name": "Telangana Singhams",
+          "short_name": "TGS"
         }
       },
       "venue": {
-        "ground": "West End Park International Cricket Stadium",
-        "city": "Doha",
-        "country": "Qatar"
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
       },
       "broadcasters": [
         {
@@ -3927,33 +3827,183 @@
       ]
     },
     {
-      "match_id": 171340,
+      "match_id": 178511,
       "category": "Domestic",
-      "series": "Plunket Shield 2026-27",
-      "match_desc": "5th Match, Day 1",
-      "match_format": "TEST",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "3rd Match, Group B",
+      "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
-        "date": "FRI, NOV 27 2026",
-        "time_utc": "2026-11-26 21:30 UTC",
-        "timestamp_millis": 1795728600000
+        "date": "THU, NOV 26 2026",
+        "time_utc": "2026-11-26 11:30 UTC",
+        "timestamp_millis": 1795692600000
       },
       "teams": {
         "team1": {
-          "id": 105,
-          "name": "Otago",
-          "short_name": "OTG"
+          "id": 3733,
+          "name": "Andaman Admirals",
+          "short_name": "AMA"
         },
         "team2": {
-          "id": 314,
-          "name": "Wellington",
-          "short_name": "WEL"
+          "id": 3743,
+          "name": "Haryana Phoenix",
+          "short_name": "HYP"
         }
       },
       "venue": {
-        "ground": "University Oval",
-        "city": "Dunedin",
-        "country": "New Zealand"
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178521,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "4th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, NOV 26 2026",
+        "time_utc": "2026-11-26 13:30 UTC",
+        "timestamp_millis": 1795699800000
+      },
+      "teams": {
+        "team1": {
+          "id": 3753,
+          "name": "J&K Northern Warriors",
+          "short_name": "JKNW"
+        },
+        "team2": {
+          "id": 3763,
+          "name": "Chandigarh Royal Strikers",
+          "short_name": "CRS"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178523,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "5th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, NOV 26 2026",
+        "time_utc": "2026-11-26 15:30 UTC",
+        "timestamp_millis": 1795707000000
+      },
+      "teams": {
+        "team1": {
+          "id": 3733,
+          "name": "Andaman Admirals",
+          "short_name": "AMA"
+        },
+        "team2": {
+          "id": 3713,
+          "name": "Twin Hills United",
+          "short_name": "THU"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 177210,
+      "category": "Domestic",
+      "series": "ACC Men's Asia Cup Rising Stars 2026",
+      "match_desc": "1st Semi-Final (A1 v B2)",
+      "match_format": "ODI",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "THU, NOV 26 2026",
+        "time_utc": "2026-11-26 10:00 UTC",
+        "timestamp_millis": 1795687200000
+      },
+      "teams": {
+        "team1": {
+          "id": 43,
+          "name": "Sri Lanka A",
+          "short_name": "SLA"
+        },
+        "team2": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        }
+      },
+      "venue": {
+        "ground": "West End Park International Cricket Stadium",
+        "city": "Doha",
+        "country": "Qatar"
       },
       "broadcasters": [
         {
@@ -4003,6 +4053,56 @@
       "venue": {
         "ground": "Bay Oval",
         "city": "Mount Maunganui",
+        "country": "New Zealand"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171340,
+      "category": "Domestic",
+      "series": "Plunket Shield 2026-27",
+      "match_desc": "5th Match, Day 1",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, NOV 27 2026",
+        "time_utc": "2026-11-26 21:30 UTC",
+        "timestamp_millis": 1795728600000
+      },
+      "teams": {
+        "team1": {
+          "id": 105,
+          "name": "Otago",
+          "short_name": "OTG"
+        },
+        "team2": {
+          "id": 314,
+          "name": "Wellington",
+          "short_name": "WEL"
+        }
+      },
+      "venue": {
+        "ground": "University Oval",
+        "city": "Dunedin",
         "country": "New Zealand"
       },
       "broadcasters": [
@@ -4139,10 +4239,10 @@
       ]
     },
     {
-      "match_id": 171807,
+      "match_id": 171830,
       "category": "Domestic",
       "series": "CSA Four-Day Series Division One 2026-27",
-      "match_desc": "13th Match, Day 2",
+      "match_desc": "16th Match, Day 2",
       "match_format": "TEST",
       "status": "Scheduled",
       "schedule": {
@@ -4152,19 +4252,19 @@
       },
       "teams": {
         "team1": {
-          "id": 1759,
-          "name": "Boland",
-          "short_name": "BOL"
+          "id": 157,
+          "name": "Lions",
+          "short_name": "LIONS"
         },
         "team2": {
-          "id": 281,
-          "name": "Knights",
-          "short_name": "KNG"
+          "id": 922,
+          "name": "North West - Eastvaal Renault Dragons",
+          "short_name": "NWEST"
         }
       },
       "venue": {
-        "ground": "Boland Park",
-        "city": "Paarl",
+        "ground": "The Wanderers Stadium",
+        "city": "Johannesburg",
         "country": "South Africa"
       },
       "broadcasters": [
@@ -4263,10 +4363,10 @@
       ]
     },
     {
-      "match_id": 171827,
+      "match_id": 171807,
       "category": "Domestic",
       "series": "CSA Four-Day Series Division One 2026-27",
-      "match_desc": "15th Match, Day 2",
+      "match_desc": "13th Match, Day 2",
       "match_format": "TEST",
       "status": "Scheduled",
       "schedule": {
@@ -4276,19 +4376,19 @@
       },
       "teams": {
         "team1": {
-          "id": 155,
-          "name": "Warriors",
-          "short_name": "WAR"
+          "id": 1759,
+          "name": "Boland",
+          "short_name": "BOL"
         },
         "team2": {
-          "id": 90,
-          "name": "Dolphins",
-          "short_name": "DOL"
+          "id": 281,
+          "name": "Knights",
+          "short_name": "KNG"
         }
       },
       "venue": {
-        "ground": "St George's Park",
-        "city": "Gqeberha",
+        "ground": "Boland Park",
+        "city": "Paarl",
         "country": "South Africa"
       },
       "broadcasters": [
@@ -4325,10 +4425,10 @@
       ]
     },
     {
-      "match_id": 171830,
+      "match_id": 171827,
       "category": "Domestic",
       "series": "CSA Four-Day Series Division One 2026-27",
-      "match_desc": "16th Match, Day 2",
+      "match_desc": "15th Match, Day 2",
       "match_format": "TEST",
       "status": "Scheduled",
       "schedule": {
@@ -4338,19 +4438,19 @@
       },
       "teams": {
         "team1": {
-          "id": 157,
-          "name": "Lions",
-          "short_name": "LIONS"
+          "id": 155,
+          "name": "Warriors",
+          "short_name": "WAR"
         },
         "team2": {
-          "id": 922,
-          "name": "North West - Eastvaal Renault Dragons",
-          "short_name": "NWEST"
+          "id": 90,
+          "name": "Dolphins",
+          "short_name": "DOL"
         }
       },
       "venue": {
-        "ground": "The Wanderers Stadium",
-        "city": "Johannesburg",
+        "ground": "St George's Park",
+        "city": "Gqeberha",
         "country": "South Africa"
       },
       "broadcasters": [
@@ -4449,6 +4549,206 @@
       ]
     },
     {
+      "match_id": 178531,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "6th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, NOV 27 2026",
+        "time_utc": "2026-11-27 09:30 UTC",
+        "timestamp_millis": 1795771800000
+      },
+      "teams": {
+        "team1": {
+          "id": 3763,
+          "name": "Chandigarh Royal Strikers",
+          "short_name": "CRS"
+        },
+        "team2": {
+          "id": 3693,
+          "name": "Andhra Warriors",
+          "short_name": "ANDW"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178533,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "7th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, NOV 27 2026",
+        "time_utc": "2026-11-27 11:30 UTC",
+        "timestamp_millis": 1795779000000
+      },
+      "teams": {
+        "team1": {
+          "id": 3753,
+          "name": "J&K Northern Warriors",
+          "short_name": "JKNW"
+        },
+        "team2": {
+          "id": 3723,
+          "name": "Telangana Singhams",
+          "short_name": "TGS"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178543,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "8th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, NOV 27 2026",
+        "time_utc": "2026-11-27 13:30 UTC",
+        "timestamp_millis": 1795786200000
+      },
+      "teams": {
+        "team1": {
+          "id": 3703,
+          "name": "Bihar Rising",
+          "short_name": "BHR"
+        },
+        "team2": {
+          "id": 3743,
+          "name": "Haryana Phoenix",
+          "short_name": "HYP"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178553,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "9th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "FRI, NOV 27 2026",
+        "time_utc": "2026-11-27 15:30 UTC",
+        "timestamp_millis": 1795793400000
+      },
+      "teams": {
+        "team1": {
+          "id": 3733,
+          "name": "Andaman Admirals",
+          "short_name": "AMA"
+        },
+        "team2": {
+          "id": 3763,
+          "name": "Chandigarh Royal Strikers",
+          "short_name": "CRS"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
       "match_id": 177214,
       "category": "Domestic",
       "series": "ACC Men's Asia Cup Rising Stars 2026",
@@ -4467,9 +4767,9 @@
           "short_name": "TBC"
         },
         "team2": {
-          "id": 106,
-          "name": "TBC",
-          "short_name": "TBC"
+          "id": 288,
+          "name": "Bangladesh A",
+          "short_name": "BANA"
         }
       },
       "venue": {
