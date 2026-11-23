@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN", "").strip()
 STATUS_CHANNEL_ID = os.getenv("DISCORD_STATUS_CHANNEL_ID", "1557457412716363797").strip()
-TARGET_URL = "https://sportzfyplay.com"
+TARGET_URL = "https://sportzfylive.com"
 
 HEADERS = {
     'Authorization': f'Bot {TOKEN}',
@@ -40,7 +40,7 @@ def update_status():
     if is_up:
         embed = {
             "title": "🟢 All Systems Operational",
-            "description": f"**[sportzfyplay.com]({TARGET_URL})** is fully **ONLINE** and operational.",
+            "description": f"**[sportzfylive.com]({TARGET_URL})** is fully **ONLINE** and operational.",
             "color": 0x1ED760,  # Green
             "fields": [
                 {"name": "Website Status", "value": "🟢 Online (HTTP 200 OK)", "inline": True},
@@ -53,7 +53,7 @@ def update_status():
     else:
         embed = {
             "title": "🔴 Service Outage Detected",
-            "description": f"**[sportzfyplay.com]({TARGET_URL})** appears to be **OFFLINE** or experiencing high latency.",
+            "description": f"**[sportzfylive.com]({TARGET_URL})** appears to be **OFFLINE** or experiencing high latency.",
             "color": 0xEF4444,  # Red
             "fields": [
                 {"name": "Website Status", "value": f"🔴 Offline ({status_code})", "inline": True},

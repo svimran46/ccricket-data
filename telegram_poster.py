@@ -10,8 +10,9 @@ from zoneinfo import ZoneInfo
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID", "@sportzfyplay")
 HISTORY_FILE = "posted_matches.json"
+SITE_URL = os.getenv("SITE_URL", "https://sportzfylive.com").rstrip("/")
 
-# Timezone that sportzfyplay.com uses for matchDate/startTime.
+# Timezone that the site uses for matchDate/startTime.
 # Verified: UEFA qualifiers (20:45 CEST kick-off) are listed as 19:45 -> UK time.
 # Europe/London handles GMT/BST daylight saving automatically.
 SOURCE_TZ = ZoneInfo(os.getenv("SOURCE_TIMEZONE", "Europe/London"))
@@ -32,19 +33,19 @@ SPORT_META = {
     "football": {
         "emoji": "⚽",
         "title": "Football Live",
-        "category_url": "https://sportzfyplay.com/sports/football",
+        "category_url": f"{SITE_URL}/sports/football",
         "tags": "#Football #LiveStream #SportzfyPlay"
     },
     "soccer": {
         "emoji": "⚽",
         "title": "Football Live",
-        "category_url": "https://sportzfyplay.com/sports/football",
+        "category_url": f"{SITE_URL}/sports/football",
         "tags": "#Football #LiveStream #SportzfyPlay"
     },
     "cricket": {
         "emoji": "🏏",
         "title": "Cricket Live",
-        "category_url": "https://sportzfyplay.com/sports/cricket",
+        "category_url": f"{SITE_URL}/sports/cricket",
         "tags": "#Cricket #LiveStream #SportzfyPlay"
     }
 }
@@ -54,12 +55,12 @@ def get_watch_url(match):
     slug = str(match.get("slug") or match.get("id") or "").strip()
     if "watch?v=" in slug:
         video_id = slug.split("watch?v=")[-1]
-        return f"https://sportzfyplay.com/watch?v={video_id}"
+        return f"{SITE_URL}/watch?v={video_id}"
     for prefix in ("/matches/", "matches/", "/watch/", "watch/"):
         if slug.startswith(prefix):
             slug = slug[len(prefix):]
     slug = slug.strip("/")
-    return f"https://sportzfyplay.com/watch?v={slug}"
+    return f"{SITE_URL}/watch?v={slug}"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -257,7 +258,7 @@ def post_match_to_discord(match):
         event_name = f"{home} vs {away}".strip() if (home and away) else "Live Match"
 
     watch_url = get_watch_url(match)
-    category_url = meta.get("category_url", "https://sportzfyplay.com/sports")
+    category_url = meta.get("category_url", f"{SITE_URL}/sports")
 
     match_date = match.get("matchDate") or ""
     start_time = match.get("startTime") or ""
@@ -300,6 +301,32 @@ def post_match_to_discord(match):
         "allowed_mentions": {"parse": []},  # never ping @everyone/@here by accident
     })
 
+ASTRO_PROPS_RE = re.compile(r'<astro-island\b[^>]*?\bprops="([^"]*)"', re.S)
+
+def _astro_decode(value):
+    """Decode Astro's island-prop serialization: every value is [type, payload].
+    type 0 = plain value / object, type 1 = array of serialized values."""
+    if isinstance(value, list) and len(value) == 2 and isinstance(value[0], int):
+        kind, payload = value
+        if kind == 1 and isinstance(payload, list):
+            return [_astro_decode(v) for v in payload]
+        return _astro_decode(payload)
+    if isinstance(value, dict):
+        return {k: _astro_decode(v) for k, v in value.items()}
+    return value
+
+def _collect_matches(node, out):
+    """Walk decoded props and collect every object that looks like a match."""
+    if isinstance(node, dict):
+        if node.get("slug") and node.get("sport") and ("eventName" in node or "homeTeam" in node):
+            out.append(node)
+            return
+        for v in node.values():
+            _collect_matches(v, out)
+    elif isinstance(node, list):
+        for v in node:
+            _collect_matches(v, out)
+
 def fetch_page_matches(url):
     matches = []
     try:
@@ -307,17 +334,13 @@ def fetch_page_matches(url):
         print(f"GET {url} -> Status {resp.status_code}")
         if not resp.ok:
             return matches
-
-        matches_raw = re.findall(r'&quot;match&quot;:\[0,(\{.*?\})\]', resp.text)
-        print(f"Found {len(matches_raw)} raw matches in {url}")
-        for raw in matches_raw:
-            clean = raw.replace('&quot;', '"')
+        for raw in ASTRO_PROPS_RE.findall(resp.content.decode("utf-8", errors="replace")):
             try:
-                data = json.loads(clean)
-                m = {k: v[1] if isinstance(v, list) and len(v) > 1 else v for k, v in data.items()}
-                matches.append(m)
-            except Exception:
+                props = _astro_decode(json.loads(html.unescape(raw)))
+            except ValueError:
                 continue
+            _collect_matches(props, matches)
+        print(f"Found {len(matches)} raw matches in {url}")
     except Exception as e:
         print(f"Error fetching {url}: {e}")
     return matches
@@ -336,8 +359,8 @@ def main():
     print(f"Currently remembered matches: {len(posted)}")
 
     all_found = []
-    all_found.extend(fetch_page_matches("https://sportzfyplay.com/"))
-    all_found.extend(fetch_page_matches("https://sportzfyplay.com/schedule"))
+    all_found.extend(fetch_page_matches(f"{SITE_URL}/"))
+    all_found.extend(fetch_page_matches(f"{SITE_URL}/schedule"))
 
     # De-duplicate matches
     unique_matches = {}
@@ -347,6 +370,8 @@ def main():
             unique_matches[key] = m
 
     print(f"Total unique matches scraped: {len(unique_matches)}")
+    if not unique_matches:
+        raise SystemExit(f"❌ ERROR: Scraped 0 matches from {SITE_URL} - the site is down or its page layout changed.")
 
     new_posts = 0
     errors = 0
