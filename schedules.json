@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Cricket Match Schedules & Broadcasters",
-    "last_updated_utc": "2026-11-23T16:34:31.613477+00:00",
-    "total_matches": 90,
+    "last_updated_utc": "2026-11-24T03:29:51.471359+00:00",
+    "total_matches": 101,
     "categories": [
       "International",
       "T20 Leagues",
@@ -10,56 +10,6 @@
     ]
   },
   "matches": [
-    {
-      "match_id": 147964,
-      "category": "International",
-      "series": "Bangladesh tour of South Africa, 2026",
-      "match_desc": "2nd Test, Day 1",
-      "match_format": "TEST",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-23 08:00 UTC",
-        "timestamp_millis": 1795420800000
-      },
-      "teams": {
-        "team1": {
-          "id": 11,
-          "name": "South Africa",
-          "short_name": "RSA"
-        },
-        "team2": {
-          "id": 6,
-          "name": "Bangladesh",
-          "short_name": "BAN"
-        }
-      },
-      "venue": {
-        "ground": "SuperSport Park",
-        "city": "Centurion",
-        "country": "South Africa"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
     {
       "match_id": 147964,
       "category": "International",
@@ -747,51 +697,63 @@
       ]
     },
     {
-      "match_id": 175243,
-      "category": "T20 Leagues",
-      "series": "International League T20 2026",
-      "match_desc": "4th Match",
+      "match_id": 151374,
+      "category": "International",
+      "series": "England tour of Australia, 2026",
+      "match_desc": "5th T20I",
       "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-23 14:30 UTC",
-        "timestamp_millis": 1795444200000
+        "date": "WED, DEC 02 2026",
+        "time_utc": "2026-12-02 08:15 UTC",
+        "timestamp_millis": 1796199300000
       },
       "teams": {
         "team1": {
-          "id": 1312,
-          "name": "Sharjah Warriorz",
-          "short_name": "SW"
+          "id": 4,
+          "name": "Australia",
+          "short_name": "AUS"
         },
         "team2": {
-          "id": 1326,
-          "name": "Desert Vipers",
-          "short_name": "DV"
+          "id": 9,
+          "name": "England",
+          "short_name": "ENG"
         }
       },
       "venue": {
-        "ground": "Sharjah Cricket Stadium",
-        "city": "Sharjah",
-        "country": "United Arab Emirates"
+        "ground": "Manuka Oval",
+        "city": "Canberra",
+        "country": "Australia"
       },
       "broadcasters": [
         {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+          "channel": "Seven Network",
+          "region": "Australia (Host)",
+          "type": "Free-to-Air",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
         },
         {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+          "channel": "Fox Cricket",
+          "region": "Australia (Host)",
+          "type": "TV & Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
+        },
+        {
+          "channel": "Star Sports",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
+        },
+        {
+          "channel": "TNT Sports",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/tnt_sports.svg"
         },
         {
           "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
+          "region": "USA",
+          "type": "TV",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
@@ -2647,125 +2609,101 @@
       ]
     },
     {
-      "match_id": 166677,
-      "category": "Domestic",
-      "series": "Sheffield Shield 2026-27",
-      "match_desc": "13th Match, Day 2",
-      "match_format": "TEST",
+      "match_id": 175290,
+      "category": "T20 Leagues",
+      "series": "International League T20 2026",
+      "match_desc": "9th Match",
+      "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-22 23:30 UTC",
-        "timestamp_millis": 1795390200000
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 10:00 UTC",
+        "timestamp_millis": 1795860000000
       },
       "teams": {
         "team1": {
-          "id": 104,
-          "name": "New South Wales",
-          "short_name": "NSW"
+          "id": 1326,
+          "name": "Desert Vipers",
+          "short_name": "DV"
         },
         "team2": {
-          "id": 164,
-          "name": "Queensland",
-          "short_name": "QL"
+          "id": 1307,
+          "name": "MI Emirates",
+          "short_name": "MIE"
         }
       },
       "venue": {
-        "ground": "Sydney Cricket Ground",
-        "city": "Sydney",
-        "country": "Australia"
+        "ground": "Zayed Cricket Stadium",
+        "city": "Abu Dhabi",
+        "country": "United Arab Emirates"
       },
       "broadcasters": [
         {
-          "channel": "Seven Network",
-          "region": "Australia",
-          "type": "Free-to-Air TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
         },
         {
-          "channel": "Fox Cricket",
-          "region": "Australia",
-          "type": "Subscription TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
-        },
-        {
-          "channel": "Star Sports",
-          "region": "India",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
-        },
-        {
-          "channel": "Sky Sports Cricket",
-          "region": "United Kingdom",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
         },
         {
           "channel": "Willow TV",
-          "region": "USA",
-          "type": "TV",
+          "region": "USA & North America",
+          "type": "Digital",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
     },
     {
-      "match_id": 166687,
-      "category": "Domestic",
-      "series": "Sheffield Shield 2026-27",
-      "match_desc": "14th Match, Day 1",
-      "match_format": "TEST",
+      "match_id": 175300,
+      "category": "T20 Leagues",
+      "series": "International League T20 2026",
+      "match_desc": "10th Match",
+      "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
-        "date": "MON, NOV 23 2026",
-        "time_utc": "2026-11-23 02:30 UTC",
-        "timestamp_millis": 1795401000000
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 14:30 UTC",
+        "timestamp_millis": 1795876200000
       },
       "teams": {
         "team1": {
-          "id": 87,
-          "name": "Western Australia",
-          "short_name": "WA"
+          "id": 1298,
+          "name": "Dubai Capitals",
+          "short_name": "DCP"
         },
         "team2": {
-          "id": 166,
-          "name": "Tasmania",
-          "short_name": "TAS"
+          "id": 1319,
+          "name": "Gulf Giants",
+          "short_name": "GG"
         }
       },
       "venue": {
-        "ground": "Perth Stadium",
-        "city": "Perth",
-        "country": "Australia"
+        "ground": "Dubai International Cricket Stadium",
+        "city": "Dubai",
+        "country": "United Arab Emirates"
       },
       "broadcasters": [
         {
-          "channel": "Seven Network",
-          "region": "Australia",
-          "type": "Free-to-Air TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/channel7.svg"
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
         },
         {
-          "channel": "Fox Cricket",
-          "region": "Australia",
-          "type": "Subscription TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fox_cricket.svg"
-        },
-        {
-          "channel": "Star Sports",
-          "region": "India",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/star_sports.svg"
-        },
-        {
-          "channel": "Sky Sports Cricket",
-          "region": "United Kingdom",
-          "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
         },
         {
           "channel": "Willow TV",
-          "region": "USA",
-          "type": "TV",
+          "region": "USA & North America",
+          "type": "Digital",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
@@ -4776,6 +4714,666 @@
         "ground": "West End Park International Cricket Stadium",
         "city": "Doha",
         "country": "Qatar"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171340,
+      "category": "Domestic",
+      "series": "Plunket Shield 2026-27",
+      "match_desc": "5th Match, Day 2",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-27 21:30 UTC",
+        "timestamp_millis": 1795815000000
+      },
+      "teams": {
+        "team1": {
+          "id": 105,
+          "name": "Otago",
+          "short_name": "OTG"
+        },
+        "team2": {
+          "id": 314,
+          "name": "Wellington",
+          "short_name": "WEL"
+        }
+      },
+      "venue": {
+        "ground": "University Oval",
+        "city": "Dunedin",
+        "country": "New Zealand"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171331,
+      "category": "Domestic",
+      "series": "Plunket Shield 2026-27",
+      "match_desc": "4th Match, Day 2",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-27 21:30 UTC",
+        "timestamp_millis": 1795815000000
+      },
+      "teams": {
+        "team1": {
+          "id": 294,
+          "name": "Northern Districts",
+          "short_name": "ND"
+        },
+        "team2": {
+          "id": 313,
+          "name": "Central Districts",
+          "short_name": "CD"
+        }
+      },
+      "venue": {
+        "ground": "Bay Oval",
+        "city": "Mount Maunganui",
+        "country": "New Zealand"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171341,
+      "category": "Domestic",
+      "series": "Plunket Shield 2026-27",
+      "match_desc": "6th Match, Day 1",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-27 21:30 UTC",
+        "timestamp_millis": 1795815000000
+      },
+      "teams": {
+        "team1": {
+          "id": 186,
+          "name": "Auckland",
+          "short_name": "AKL"
+        },
+        "team2": {
+          "id": 312,
+          "name": "Canterbury",
+          "short_name": "CNTBRY"
+        }
+      },
+      "venue": {
+        "ground": "Eden Park Outer Oval",
+        "city": "Auckland",
+        "country": "New Zealand"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171830,
+      "category": "Domestic",
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "match_desc": "16th Match, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 08:00 UTC",
+        "timestamp_millis": 1795852800000
+      },
+      "teams": {
+        "team1": {
+          "id": 157,
+          "name": "Lions",
+          "short_name": "LIONS"
+        },
+        "team2": {
+          "id": 922,
+          "name": "North West - Eastvaal Renault Dragons",
+          "short_name": "NWEST"
+        }
+      },
+      "venue": {
+        "ground": "The Wanderers Stadium",
+        "city": "Johannesburg",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171827,
+      "category": "Domestic",
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "match_desc": "15th Match, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 08:00 UTC",
+        "timestamp_millis": 1795852800000
+      },
+      "teams": {
+        "team1": {
+          "id": 155,
+          "name": "Warriors",
+          "short_name": "WAR"
+        },
+        "team2": {
+          "id": 90,
+          "name": "Dolphins",
+          "short_name": "DOL"
+        }
+      },
+      "venue": {
+        "ground": "St George's Park",
+        "city": "Gqeberha",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171817,
+      "category": "Domestic",
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "match_desc": "14th Match, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 08:00 UTC",
+        "timestamp_millis": 1795852800000
+      },
+      "teams": {
+        "team1": {
+          "id": 917,
+          "name": "Western Province",
+          "short_name": "WPR"
+        },
+        "team2": {
+          "id": 89,
+          "name": "Titans",
+          "short_name": "TIT"
+        }
+      },
+      "venue": {
+        "ground": "Newlands",
+        "city": "Cape Town",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 171807,
+      "category": "Domestic",
+      "series": "CSA Four-Day Series Division One 2026-27",
+      "match_desc": "13th Match, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 08:00 UTC",
+        "timestamp_millis": 1795852800000
+      },
+      "teams": {
+        "team1": {
+          "id": 1759,
+          "name": "Boland",
+          "short_name": "BOL"
+        },
+        "team2": {
+          "id": 281,
+          "name": "Knights",
+          "short_name": "KNG"
+        }
+      },
+      "venue": {
+        "ground": "Boland Park",
+        "city": "Paarl",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 172087,
+      "category": "Domestic",
+      "series": "CSA Three-Day Series Division Two 2026-27",
+      "match_desc": "9th Match, Day 3",
+      "match_format": "TEST",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 08:00 UTC",
+        "timestamp_millis": 1795852800000
+      },
+      "teams": {
+        "team1": {
+          "id": 933,
+          "name": "Eastern Storm",
+          "short_name": "ESTORM"
+        },
+        "team2": {
+          "id": 923,
+          "name": "Northern Cape",
+          "short_name": "NCAPE"
+        }
+      },
+      "venue": {
+        "ground": "Willowmoore Park",
+        "city": "Benoni",
+        "country": "South Africa"
+      },
+      "broadcasters": [
+        {
+          "channel": "SuperSport",
+          "region": "South Africa",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/supersport.svg"
+        },
+        {
+          "channel": "Sports18",
+          "region": "India",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sports18.svg"
+        },
+        {
+          "channel": "JioCinema",
+          "region": "India",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/jiocinema.svg"
+        },
+        {
+          "channel": "Sky Sports Cricket",
+          "region": "United Kingdom",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/sky_sports.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA",
+          "type": "TV",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178563,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "10th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 09:30 UTC",
+        "timestamp_millis": 1795858200000
+      },
+      "teams": {
+        "team1": {
+          "id": 3713,
+          "name": "Twin Hills United",
+          "short_name": "THU"
+        },
+        "team2": {
+          "id": 3743,
+          "name": "Haryana Phoenix",
+          "short_name": "HYP"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178571,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "11th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 11:30 UTC",
+        "timestamp_millis": 1795865400000
+      },
+      "teams": {
+        "team1": {
+          "id": 3703,
+          "name": "Bihar Rising",
+          "short_name": "BHR"
+        },
+        "team2": {
+          "id": 3723,
+          "name": "Telangana Singhams",
+          "short_name": "TGS"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178581,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "12th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 13:30 UTC",
+        "timestamp_millis": 1795872600000
+      },
+      "teams": {
+        "team1": {
+          "id": 3753,
+          "name": "J&K Northern Warriors",
+          "short_name": "JKNW"
+        },
+        "team2": {
+          "id": 3693,
+          "name": "Andhra Warriors",
+          "short_name": "ANDW"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 178583,
+      "category": "Domestic",
+      "series": "Indian Softball Cricket League 2026",
+      "match_desc": "13th Match, Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "SAT, NOV 28 2026",
+        "time_utc": "2026-11-28 15:30 UTC",
+        "timestamp_millis": 1795879800000
+      },
+      "teams": {
+        "team1": {
+          "id": 3733,
+          "name": "Andaman Admirals",
+          "short_name": "AMA"
+        },
+        "team2": {
+          "id": 3703,
+          "name": "Bihar Rising",
+          "short_name": "BHR"
+        }
+      },
+      "venue": {
+        "ground": "Acharya Stadium",
+        "city": "Bengaluru",
+        "country": "India"
       },
       "broadcasters": [
         {
