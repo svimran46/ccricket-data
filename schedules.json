@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Cricket Match Schedules & Broadcasters",
-    "last_updated_utc": "2026-11-25T16:13:08.502461+00:00",
-    "total_matches": 93,
+    "last_updated_utc": "2026-11-26T01:12:01.161317+00:00",
+    "total_matches": 97,
     "categories": [
       "International",
       "T20 Leagues",
@@ -672,56 +672,6 @@
         "ground": "St George's Park",
         "city": "Gqeberha",
         "country": "South Africa"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 175263,
-      "category": "T20 Leagues",
-      "series": "International League T20 2026",
-      "match_desc": "6th Match",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "WED, NOV 25 2026",
-        "time_utc": "2026-11-25 14:30 UTC",
-        "timestamp_millis": 1795617000000
-      },
-      "teams": {
-        "team1": {
-          "id": 1298,
-          "name": "Dubai Capitals",
-          "short_name": "DCP"
-        },
-        "team2": {
-          "id": 1326,
-          "name": "Desert Vipers",
-          "short_name": "DV"
-        }
-      },
-      "venue": {
-        "ground": "Dubai International Cricket Stadium",
-        "city": "Dubai",
-        "country": "United Arab Emirates"
       },
       "broadcasters": [
         {
@@ -1821,6 +1771,256 @@
       "venue": {
         "ground": "Dubai International Cricket Stadium",
         "city": "Dubai",
+        "country": "United Arab Emirates"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 165350,
+      "category": "T20 Leagues",
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "match_desc": "Super League Group A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, NOV 30 2026",
+        "time_utc": "2026-11-30 03:30 UTC",
+        "timestamp_millis": 1796009400000
+      },
+      "teams": {
+        "team1": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        },
+        "team2": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        }
+      },
+      "venue": {
+        "ground": "Vidarbha Cricket Association Ground, Civil Lines",
+        "city": "Nagpur",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 165351,
+      "category": "T20 Leagues",
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "match_desc": "Super League Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, NOV 30 2026",
+        "time_utc": "2026-11-30 05:30 UTC",
+        "timestamp_millis": 1796016600000
+      },
+      "teams": {
+        "team1": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        },
+        "team2": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        }
+      },
+      "venue": {
+        "ground": "Vidarbha Cricket Association Stadium, Jamtha",
+        "city": "Nagpur",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 165361,
+      "category": "T20 Leagues",
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "match_desc": "Super League Group A",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, NOV 30 2026",
+        "time_utc": "2026-11-30 08:00 UTC",
+        "timestamp_millis": 1796025600000
+      },
+      "teams": {
+        "team1": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        },
+        "team2": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        }
+      },
+      "venue": {
+        "ground": "Vidarbha Cricket Association Ground, Civil Lines",
+        "city": "Nagpur",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 165363,
+      "category": "T20 Leagues",
+      "series": "Syed Mushtaq Ali Trophy Elite 2026",
+      "match_desc": "Super League Group B",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, NOV 30 2026",
+        "time_utc": "2026-11-30 11:00 UTC",
+        "timestamp_millis": 1796036400000
+      },
+      "teams": {
+        "team1": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        },
+        "team2": {
+          "id": 106,
+          "name": "TBC",
+          "short_name": "TBC"
+        }
+      },
+      "venue": {
+        "ground": "Vidarbha Cricket Association Stadium, Jamtha",
+        "city": "Nagpur",
+        "country": "India"
+      },
+      "broadcasters": [
+        {
+          "channel": "ICC.tv",
+          "region": "Global",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
+        },
+        {
+          "channel": "FanCode",
+          "region": "Subcontinent",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
+        },
+        {
+          "channel": "Willow TV",
+          "region": "USA & North America",
+          "type": "Digital",
+          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
+        }
+      ]
+    },
+    {
+      "match_id": 175323,
+      "category": "T20 Leagues",
+      "series": "International League T20 2026",
+      "match_desc": "13th Match",
+      "match_format": "T20",
+      "status": "Scheduled",
+      "schedule": {
+        "date": "MON, NOV 30 2026",
+        "time_utc": "2026-11-30 14:30 UTC",
+        "timestamp_millis": 1796049000000
+      },
+      "teams": {
+        "team1": {
+          "id": 1300,
+          "name": "Abu Dhabi Knight Riders",
+          "short_name": "ADKR"
+        },
+        "team2": {
+          "id": 1307,
+          "name": "MI Emirates",
+          "short_name": "MIE"
+        }
+      },
+      "venue": {
+        "ground": "Zayed Cricket Stadium",
+        "city": "Abu Dhabi",
         "country": "United Arab Emirates"
       },
       "broadcasters": [
