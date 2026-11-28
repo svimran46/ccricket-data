@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Cricket Match Schedules & Broadcasters",
-    "last_updated_utc": "2026-11-28T00:44:09.140021+00:00",
-    "total_matches": 67,
+    "last_updated_utc": "2026-11-28T14:36:13.463353+00:00",
+    "total_matches": 64,
     "categories": [
       "International",
       "T20 Leagues",
@@ -335,10 +335,10 @@
       ]
     },
     {
-      "match_id": 178227,
+      "match_id": 178220,
       "category": "International",
       "series": "ICC Cricket World Cup Qualifier Play-off 2026",
-      "match_desc": "2nd Match",
+      "match_desc": "1st Match",
       "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
@@ -348,19 +348,19 @@
       },
       "teams": {
         "team1": {
-          "id": 161,
-          "name": "Namibia",
-          "short_name": "NAM"
+          "id": 72,
+          "name": "Nepal",
+          "short_name": "NEP"
         },
         "team2": {
-          "id": 44,
-          "name": "Uganda",
-          "short_name": "UGA"
+          "id": 527,
+          "name": "Italy",
+          "short_name": "ITA"
         }
       },
       "venue": {
-        "ground": "Mulpani Cricket Ground",
-        "city": "Kathmandu",
+        "ground": "Tribhuvan University International Cricket Ground",
+        "city": "Kirtipur",
         "country": "Nepal"
       },
       "broadcasters": [
@@ -409,10 +409,10 @@
       ]
     },
     {
-      "match_id": 178220,
+      "match_id": 178227,
       "category": "International",
       "series": "ICC Cricket World Cup Qualifier Play-off 2026",
-      "match_desc": "1st Match",
+      "match_desc": "2nd Match",
       "match_format": "T20",
       "status": "Scheduled",
       "schedule": {
@@ -422,19 +422,19 @@
       },
       "teams": {
         "team1": {
-          "id": 72,
-          "name": "Nepal",
-          "short_name": "NEP"
+          "id": 161,
+          "name": "Namibia",
+          "short_name": "NAM"
         },
         "team2": {
-          "id": 527,
-          "name": "Italy",
-          "short_name": "ITA"
+          "id": 44,
+          "name": "Uganda",
+          "short_name": "UGA"
         }
       },
       "venue": {
-        "ground": "Tribhuvan University International Cricket Ground",
-        "city": "Kirtipur",
+        "ground": "Mulpani Cricket Ground",
+        "city": "Kathmandu",
         "country": "Nepal"
       },
       "broadcasters": [
@@ -677,56 +677,6 @@
           "region": "Global",
           "type": "Digital",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 175290,
-      "category": "T20 Leagues",
-      "series": "International League T20 2026",
-      "match_desc": "9th Match",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SAT, NOV 28 2026",
-        "time_utc": "2026-11-28 10:00 UTC",
-        "timestamp_millis": 1795860000000
-      },
-      "teams": {
-        "team1": {
-          "id": 1326,
-          "name": "Desert Vipers",
-          "short_name": "DV"
-        },
-        "team2": {
-          "id": 1307,
-          "name": "MI Emirates",
-          "short_name": "MIE"
-        }
-      },
-      "venue": {
-        "ground": "Zayed Cricket Stadium",
-        "city": "Abu Dhabi",
-        "country": "United Arab Emirates"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
     },
@@ -1874,106 +1824,6 @@
           "channel": "Willow TV",
           "region": "USA",
           "type": "TV",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 178563,
-      "category": "Domestic",
-      "series": "Indian Softball Cricket League 2026",
-      "match_desc": "10th Match, Group B",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SAT, NOV 28 2026",
-        "time_utc": "2026-11-28 09:30 UTC",
-        "timestamp_millis": 1795858200000
-      },
-      "teams": {
-        "team1": {
-          "id": 3713,
-          "name": "UP Kings",
-          "short_name": "UPK"
-        },
-        "team2": {
-          "id": 3743,
-          "name": "Haryana Phoenix",
-          "short_name": "HYP"
-        }
-      },
-      "venue": {
-        "ground": "Acharya Stadium",
-        "city": "Bengaluru",
-        "country": "India"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
-        }
-      ]
-    },
-    {
-      "match_id": 178571,
-      "category": "Domestic",
-      "series": "Indian Softball Cricket League 2026",
-      "match_desc": "11th Match, Group B",
-      "match_format": "T20",
-      "status": "Scheduled",
-      "schedule": {
-        "date": "SAT, NOV 28 2026",
-        "time_utc": "2026-11-28 11:30 UTC",
-        "timestamp_millis": 1795865400000
-      },
-      "teams": {
-        "team1": {
-          "id": 3703,
-          "name": "Bihar Rising",
-          "short_name": "BHR"
-        },
-        "team2": {
-          "id": 3723,
-          "name": "Telangana Singhams",
-          "short_name": "TGS"
-        }
-      },
-      "venue": {
-        "ground": "Acharya Stadium",
-        "city": "Bengaluru",
-        "country": "India"
-      },
-      "broadcasters": [
-        {
-          "channel": "ICC.tv",
-          "region": "Global",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/icc_tv.svg"
-        },
-        {
-          "channel": "FanCode",
-          "region": "Subcontinent",
-          "type": "Digital",
-          "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/fancode.svg"
-        },
-        {
-          "channel": "Willow TV",
-          "region": "USA & North America",
-          "type": "Digital",
           "logo": "https://raw.githubusercontent.com/svimran46/ccricket-data/main/assets/logos/willow_tv.svg"
         }
       ]
